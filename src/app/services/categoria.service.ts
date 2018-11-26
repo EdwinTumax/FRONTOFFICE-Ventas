@@ -1,12 +1,35 @@
 import { Injectable } from '@angular/core';
 import { URL_API } from './../../environments/environment';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Categoria } from '../components/interfaces/categoria.interface';
 @Injectable({
   providedIn: 'root'
 })
 export class CategoriaService {
   constructor(private _httpClient: HttpClient) { }
-  getCategoria() {
+
+  getCategorias() {
     return this._httpClient.get(`${URL_API}categoria`);
+  }
+
+  getCategoria(id: number) {
+    return this._httpClient.get(`${URL_API}categoria/${id}`);
+  }
+
+  addCategoria(categoria: Categoria) {
+    const body = JSON.stringify(categoria);
+    return this._httpClient.post(`${URL_API}categoria`, body, {headers: this.getHeaders()});
+  }
+
+  updateCategoria(categoria: Categoria) {
+    const body = JSON.stringify(categoria);
+    console.log(body);
+    return this._httpClient.put(`${URL_API}categoria/${categoria.codigoCategoria}`, body, {headers: this.getHeaders()});
+  }
+
+  getHeaders() {
+    const headers = new HttpHeaders()
+      .set('Content-Type', 'Application/json');
+      return headers;
   }
 }

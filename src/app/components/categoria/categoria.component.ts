@@ -10,7 +10,7 @@ import { Categoria } from './../interfaces/categoria.interface';
 export class CategoriaComponent implements OnInit {
   categorias: any[] = [];
   constructor(private _categoriaService: CategoriaService) {
-    this._categoriaService.getCategoria().subscribe( (data: any) => {
+    this._categoriaService.getCategorias().subscribe( (data: any) => {
       this.categorias = data;
     });
   }

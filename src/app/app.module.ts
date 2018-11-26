@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 // Archivo de rutas
 
@@ -12,15 +13,18 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
+import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    AddUpdateCategoriaComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
