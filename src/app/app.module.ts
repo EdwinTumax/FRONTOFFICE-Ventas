@@ -13,6 +13,7 @@ import { ROUTES } from './app.routes';
 
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
+import {UsuarioService} from './services/usuario.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -22,6 +23,9 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { Usuario } from './app/services/usuario.service.ts/usuario.service.ts.component';
+import { AddUpdateUsuarioComponent } from './usuario/add-update-usuario/add-update-usuario.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     CategoriaComponent,
     AddUpdateCategoriaComponent,
     LoginComponent,
-    LoadingComponent
+    LoadingComponent,
+    UsuarioComponent,
+    Usuario.Service.TsComponent,
+    AddUpdateUsuarioComponent
   ],
   imports: [
     FormsModule,
