@@ -9,11 +9,11 @@ export class CategoriaService {
   constructor(private _httpClient: HttpClient) { }
 
   getCategorias() {
-    return this._httpClient.get(`${URL_API}categoria`);
+    return this._httpClient.get(`${URL_API}categoria`, {headers: this.getHeaders()});
   }
 
   getCategoria(id: number) {
-    return this._httpClient.get(`${URL_API}categoria/${id}`);
+    return this._httpClient.get(`${URL_API}categoria/${id}`, {headers: this.getHeaders()});
   }
 
   addCategoria(categoria: Categoria) {
@@ -29,7 +29,8 @@ export class CategoriaService {
 
   getHeaders() {
     const headers = new HttpHeaders()
-      .set('Content-Type', 'Application/json');
+      .set('Content-Type', 'Application/json')
+      .set('Authorization', `Bearer ${window.sessionStorage.getItem('access_token')}`);
       return headers;
   }
 }

@@ -6,7 +6,11 @@ export const environment = {
   production: false
 };
 
-export const URL_API = 'http://localhost:9300/api/v1/';
+// export const URL_API = 'http://localhost:9300/api/v1/';
+export const URL_API = 'https://backoffice-ventas.herokuapp.com/api/v1/';
+// export const URL_AUT = 'http://localhost:9300/oauth/token';
+export const URL_AUT = 'https://backoffice-ventas.herokuapp.com/oauth/token';
+export const TOKEN = 'XJSK';
 
 /*
  * For easier debugging in development mode, you can import the following file
