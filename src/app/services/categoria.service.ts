@@ -23,8 +23,11 @@ export class CategoriaService {
 
   updateCategoria(categoria: Categoria) {
     const body = JSON.stringify(categoria);
-    console.log(body);
     return this._httpClient.put(`${URL_API}categoria/${categoria.codigoCategoria}`, body, {headers: this.getHeaders()});
+  }
+
+  deleteCategoria(id: number) {
+    return this._httpClient.delete(`${URL_API}categoria/${id}`, {headers: this.getHeaders()});
   }
 
   getHeaders() {

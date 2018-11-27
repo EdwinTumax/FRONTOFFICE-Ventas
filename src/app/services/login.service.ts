@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Http, Headers } from '@angular/http';
-import { TOKEN, URL_AUT } from './../../environments/environment';
+import { URL_AUT } from './../../environments/environment';
 import { User } from '../components/interfaces/user.interface';
 
 @Injectable({
