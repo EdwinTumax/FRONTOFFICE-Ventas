@@ -22,6 +22,8 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ClienteComponent } from './components/cliente/cliente.component';
+import { AddUpdateClienteComponent } from './components/cliente/add-update-cliente/add-update-cliente';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NavbarComponent,
     HomeComponent,
     CategoriaComponent,
+    ClienteComponent,
     AddUpdateCategoriaComponent,
+    AddUpdateClienteComponent,
     LoginComponent,
     LoadingComponent
   ],
