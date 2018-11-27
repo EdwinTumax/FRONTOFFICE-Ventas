@@ -1,0 +1,22 @@
+<head>Proveedor</head>
+<button [routerLink]="['/proveedor']" class="btn btn-outline-primary">Regresar</button>
+<hr>
+<div class="row">
+    <div class="col-md-12">
+        <form (ngSubmit)="guardar()" #forma="ngForm">
+            <div class="form-group">
+                <label for="txtContactoPrincipal">ContactoPrincipal</label>
+                <input placeholder="ContactoPrincipal" name="txtContactoPrincipal" [(ngModel)]="proveedor.contactoPrincipal" requeried class="from-control" id="txtcontactoPrincipal" type="text">
+                <label for="txtNit">NIT</label>
+                <input placeholder="Nit" name="txtNit" [(ngModel)]="proveedor.nit" required class="form-control" id="txtNit" type="number">
+                <label for="txtPaginaWeb">Pagina Web</label>
+                <input placeholder="PaginaWeb" name="txtPaginaWeb" [(ngModel)]="proveedor.paginaWeb" required class="form-control" id="txtPaginaWeb" type="text">
+                <label for="txtRazonSocial">Razon Social</label>
+                <input placeholder="RazonSocial" name="txtRazonSocial" [(ngModel)]="proveedor.razonSocial" required class="form-control" id="txtRazonSocial" type="text">
+            </div>
+            <div class="form-group">
+                <button [disabled]="!forma.valid" type="submit" class="btn btn-outline-primary">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>

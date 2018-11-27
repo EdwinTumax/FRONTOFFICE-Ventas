@@ -22,6 +22,8 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ProveedorComponent } from './components/proveedor/proveedor.component';
+import { AddUpdateProveedorComponent } from './components/proveedor/add-update-proveedor/add-update-proveedor.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     CategoriaComponent,
     AddUpdateCategoriaComponent,
     LoginComponent,
-    LoadingComponent
+    LoadingComponent,
+    ProveedorComponent,
+    AddUpdateProveedorComponent
   ],
   imports: [
     FormsModule,
