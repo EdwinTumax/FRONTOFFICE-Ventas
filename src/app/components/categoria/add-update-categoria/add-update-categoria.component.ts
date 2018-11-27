@@ -16,7 +16,7 @@ export class AddUpdateCategoriaComponent implements OnInit {
   nuevo = false;
   constructor(private _activatedRoute: ActivatedRoute, private _categoriaService: CategoriaService, private _router: Router) {
     this._activatedRoute.params.subscribe(params => {
-      if ( params['id'] > 0) {
+      if (params['id'] > 0) {
         this._categoriaService.getCategoria(params['id']).subscribe((data: any) => {
           this.categoria = data;
         });
@@ -24,13 +24,13 @@ export class AddUpdateCategoriaComponent implements OnInit {
         this.nuevo = true;
       }
     });
-   }
+  }
 
   ngOnInit() {
   }
 
   guardar() {
-    if ( this.nuevo ) {
+    if (this.nuevo) {
       this._categoriaService.addCategoria(this.categoria).subscribe(data => {
         console.log(data);
         this._router.navigate(['/categoria']);

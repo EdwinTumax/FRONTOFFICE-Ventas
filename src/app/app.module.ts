@@ -22,6 +22,8 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { CompraComponent } from './components/compra/compra.component';
+import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/add-udpate-compra.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     CategoriaComponent,
     AddUpdateCategoriaComponent,
     LoginComponent,
-    LoadingComponent
+    LoadingComponent,
+    CompraComponent,
+    AddUdpateCompraComponent
   ],
   imports: [
     FormsModule,
