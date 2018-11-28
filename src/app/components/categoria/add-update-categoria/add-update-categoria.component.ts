@@ -3,6 +3,7 @@ import { Categoria } from '../../interfaces/categoria.interface';
 import { NgForm } from '@angular/forms';
 import { CategoriaService } from './../../../services/categoria.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { CategoriaComponent} from './../categoria.component';
 @Component({
   selector: 'app-add-update-categoria',
   templateUrl: './add-update-categoria.component.html',

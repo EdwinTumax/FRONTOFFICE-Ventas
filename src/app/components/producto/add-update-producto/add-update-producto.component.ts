@@ -3,22 +3,18 @@ import { Producto } from '../../interfaces/producto.interface';
 import {NgForm} from '@angular/forms';
 import {ProductoService} from './../../../services/producto.service';
 import { Router, ActivatedRoute } from '@angular/router';
-// import { Categoria } from '../../interfaces/categoria.interface';
+import { Categoria } from '../../interfaces/categoria.interface';
 @Component({
   selector: 'app-add-update-producto',
   templateUrl: './add-update-producto.component.html',
   styles: []
 })
 export class AddUpdateProductoComponent implements OnInit {
-  // categoria: Categoria = {
-  //   codigoCategoria: 0,
-  //   descripcion: ''
-  // };
   producto: Producto = {
     codigoProducto: 0,
     descripcion: '',
-    // codigoCategoria:,
-    // codigoTipoEmpaque: 0,
+    categoria: { codigoCategoria: 0, descripcion : ''},
+    // empaque: { codigoEmpaque: 0, descripcion : ''},
     imagen: ''
   };
   nuevo = false;
