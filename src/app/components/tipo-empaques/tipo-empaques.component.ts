@@ -11,11 +11,15 @@ export class TipoEmpaquesComponent implements OnInit {
   loading = false;
   constructor(private _TipoEmpaqueService: TipoEmpaqueService) {
     this.loading = true;
-    this._TipoEmpaqueService.getTipoEmpaque().subscribe( (data: any) => {
+    this._TipoEmpaqueService.getTipoEmpaques().subscribe( (data: any) => {
       this.tipoEmpaques = data;
       this.loading = false;
     })
   }
+  // eliminar(index: number){
+  //   const registro = this.tipoEmpaques[index];
+  //   this._TipoEmpaqueService.
+  // }
 
   ngOnInit() {
   }
