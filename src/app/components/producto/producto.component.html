@@ -7,11 +7,12 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Codigo Producto</th>
-      <th scope="col">Codigo de Categoria</th>
+      <th scope="col">Código</th>
+      <th scope="col">Descripción</th>
       <th scope="col">Codigo Tipo de Empaque</th>
-      <th scope="col">Descripcion</th>
+      <th scope="col">Codigo de Categoria</th>
       <th scope="col">Imagen</th>
+      <th scope="col">Opciones</th>
     </tr>
   </thead>
   <tbody *ngFor="let producto of productos; let i = index">
@@ -19,6 +20,9 @@
       <th scope="row">{{ i + 1}}</th>
       <td>{{ producto.codigoProducto}}</td>
       <td>{{ producto.descripcion}}</td>
+      <td>{{ producto.codigoTipoEmpaque}}</td>
+      <td>{{ producto.codigoCategoria}}</td>
+      <td><img src="./../../../assets/img/sueter.jpg" height="100" width="100"></td>
       <td> 
         <button (click) = "eliminar(i)" class="btn btn-danger w120">Delete</button> 
         <button [routerLink]="['/producto-update',producto.codigoProducto]" class="btn btn-success w120">Editar</button>

@@ -9,11 +9,11 @@ export class ProductoService {
 
   constructor(private _httpClient: HttpClient) { }
 
-  getProducto() {
+  getProductos() {
     return this._httpClient.get(`${URL_API}producto`, {headers: this.getHeaders()});
   }
 
-  getProductos(id: number) {
+  getProducto(id: number) {
     return this._httpClient.get(`${URL_API}producto/${id}`, {headers: this.getHeaders()});
   }
 

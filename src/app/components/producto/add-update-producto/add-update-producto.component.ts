@@ -4,7 +4,6 @@ import {NgForm} from '@angular/forms';
 import {ProductoService} from './../../../services/producto.service';
 import { Router, ActivatedRoute } from '@angular/router';
 // import { Categoria } from '../../interfaces/categoria.interface';
-// import { ProductoService } from '../../../services/producto.service';
 @Component({
   selector: 'app-add-update-producto',
   templateUrl: './add-update-producto.component.html',
@@ -24,15 +23,15 @@ export class AddUpdateProductoComponent implements OnInit {
   };
   nuevo = false;
   constructor(private _activatedRoute: ActivatedRoute, private _productoService: ProductoService, private _router: Router) {
-    // this._activatedRoute.params.subscribe(params => {
-    //   if ( params['id'] > 0) {
-    //     this._productoService.getProducto(params['id']).subscribe((data: any) => {
-    //       this.producto = data;
-    //     });
-    //   } else {
-    //     this.nuevo = true;
-    //   }
-    // });
+    this._activatedRoute.params.subscribe(params => {
+      if ( params['id'] > 0) {
+        this._productoService.getProducto(params['id']).subscribe((data: any) => {
+          this.producto = data;
+        });
+      } else {
+        this.nuevo = true;
+      }
+    });
   }
   ngOnInit() {
   }

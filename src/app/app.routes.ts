@@ -14,6 +14,7 @@ export const ROUTES: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'producto', component: ProductoComponent },
     { path: 'producto-add', component: AddUpdateProductoComponent},
+    { path: 'producto-update/:id', component: AddUpdateProductoComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

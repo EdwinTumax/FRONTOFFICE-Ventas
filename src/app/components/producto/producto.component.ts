@@ -7,8 +7,21 @@ import {ProductoService} from './../../services/producto.service';
   styles: []
 })
 export class ProductoComponent implements OnInit {
-
-  constructor(private _productoService: ProductoService) { }
+  productos: any[] = [];
+  loading = false;
+  constructor(private _productoService: ProductoService) {
+    this.loading = true;
+    this._productoService.getProductos().subscribe((data: any) => {
+      this.productos = data;
+      this.loading = false;
+    });
+  }
+  eliminar(index: number) {
+    const registro = this.productos[index];
+    this._productoService.deleteProducto(registro.codigoProducto).subscribe((data) => {
+        this.productos.splice(index, index + 1);
+    });
+  }
 
   ngOnInit() {
   }

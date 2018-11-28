@@ -44,7 +44,7 @@ import { AddUpdateProductoComponent } from './components/producto/add-update-pro
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService],
+  providers: [CategoriaService, LoginService, ProductoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
