@@ -1,6 +1,6 @@
-export interface TelefonoCliente{
+export interface TelCliente{
     'codigoTelefono': number;
     'descripcion': string;
-    'numeroTelefono': string;
+    'numeroTelefono': number;
     'codigoCliente': number;
 }

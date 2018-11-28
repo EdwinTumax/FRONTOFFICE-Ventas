@@ -13,6 +13,8 @@ import { ROUTES } from './app.routes';
 
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
+import {ClienteService } from './services/cliente.service';
+import {DirClienteService} from './services/dirCliente.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -22,8 +24,12 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
-import { ClienteComponent } from './components/cliente/cliente.component';
-import { AddUpdateClienteComponent } from './components/cliente/add-update-cliente/add-update-cliente';
+import { AddUpdateClienteComponent } from './components/cliente/add-update-cliente/add-update-cliente.component';
+import { AddUpdateDirClienteComponent } from './components/dirCliente/add-update-dirCliente/add-update-dirCliente.component';
+import { ClienteComponent} from './components/cliente/cliente.component';
+import { DirClienteComponent} from './components/dirCliente/dirCliente.component';
+import { TelClienteComponent } from './components/telCliente/telCliente.component';
+import { AddUpdateTelClienteComponent } from './components/telCliente/add-update-telCliente/add-update-telCliente.component';
 
 @NgModule({
   declarations: [
@@ -31,11 +37,13 @@ import { AddUpdateClienteComponent } from './components/cliente/add-update-clien
     NavbarComponent,
     HomeComponent,
     CategoriaComponent,
-    ClienteComponent,
     AddUpdateCategoriaComponent,
-    AddUpdateClienteComponent,
     LoginComponent,
-    LoadingComponent
+    LoadingComponent,
+    AddUpdateCategoriaComponent,
+    AddUpdateDirClienteComponent,
+    ClienteComponent,
+    DirClienteComponent
   ],
   imports: [
     FormsModule,
