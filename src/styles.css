@@ -70,3 +70,10 @@ body {
 .color1 {
     color: white;
 }
+
+.back {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tienda-de-ropa-83583.appspot.com/o/Rayos.jpg?alt=media&token=d2b17297-1b31-4341-a01d-3c9618fd66e0');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
