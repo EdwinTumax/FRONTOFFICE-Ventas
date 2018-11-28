@@ -24,8 +24,7 @@ import { AddUpdateCategoriaComponent } from './components/categoria/add-update-c
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
-import { Usuario } from './app/services/usuario.service.ts/usuario.service.ts.component';
-import { AddUpdateUsuarioComponent } from './usuario/add-update-usuario/add-update-usuario.component';
+import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +36,7 @@ import { AddUpdateUsuarioComponent } from './usuario/add-update-usuario/add-upda
     LoginComponent,
     LoadingComponent,
     UsuarioComponent,
-    Usuario.Service.TsComponent,
+    // Usuario.Service.TsComponent,
     AddUpdateUsuarioComponent
   ],
   imports: [
