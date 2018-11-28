@@ -13,6 +13,7 @@ import { ROUTES } from './app.routes';
 
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
+import {TipoEmpaqueService} from './services/tipoEmpaque.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -22,6 +23,7 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { TipoEmpaquesComponent } from './components/tipo-empaques/tipo-empaques.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     CategoriaComponent,
     AddUpdateCategoriaComponent,
     LoginComponent,
-    LoadingComponent
+    LoadingComponent,
+    TipoEmpaquesComponent
   ],
   imports: [
     FormsModule,
@@ -40,7 +43,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService],
+  providers: [CategoriaService, LoginService, TipoEmpaqueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
