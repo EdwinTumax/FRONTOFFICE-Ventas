@@ -24,6 +24,8 @@ import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { CompraComponent } from './components/compra/compra.component';
 import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/add-udpate-compra.component';
+import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
+import { AddUpdateDetalleCompraComponent } from './components/detalle-compra/add-update-detalle-compra/add-update-detalle-compra.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/
     LoginComponent,
     LoadingComponent,
     CompraComponent,
-    AddUdpateCompraComponent
+    AddUdpateCompraComponent,
+    DetalleCompraComponent,
+    AddUpdateDetalleCompraComponent
   ],
   imports: [
     FormsModule,

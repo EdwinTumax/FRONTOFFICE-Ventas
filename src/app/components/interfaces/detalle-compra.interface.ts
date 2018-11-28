@@ -1,5 +1,5 @@
 export interface DetalleCompra {
-  'codigoDireccion': number;
+  'codigoDetalleCompra': number;
   'direccion': string;
   'descripcion': string;
   'proveedor': any;
