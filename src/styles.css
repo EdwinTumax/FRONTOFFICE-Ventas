@@ -44,9 +44,8 @@ body {
 }
 
 .TypeLetter {
-    font-family: monospace;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
-    margin-top: 5px;
 }
 
 .TypeH2 {
@@ -98,6 +97,10 @@ body {
 
 .slider img {
     width: 100%;
+}
+
+.slider :hover {
+    opacity: 20%;
 }
 
 @keyframes cambio {
