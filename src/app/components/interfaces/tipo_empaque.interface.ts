@@ -1,4 +1,4 @@
-export interface tipoEmpaque {
+export interface TipoEmpaque {
     'codigoTipoEmpaque': number;
     'descripcion': string;
 }
