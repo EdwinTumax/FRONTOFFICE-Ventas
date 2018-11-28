@@ -46,7 +46,7 @@ import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuar
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService],
+  providers: [CategoriaService, LoginService, UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
