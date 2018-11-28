@@ -8,11 +8,13 @@
         <label for="txtDescripcion">Descripción</label>
         <input placeholder="Descripción" name="txtDescripcion" [(ngModel)]="producto.descripcion" required class="form-control" id="txtDescripcion" type="text">
         <label for="cmbCategoria">Categoría   </label>
+        <select id="cmbCategoria" id="categoria" name="categoria" [(ngModel)]="categoria">
+        </select>
         <p></p>
         <label for="cmbCodigoTipoEmpaquetado">Código de Empaquetado</label>
         <select id="cmbCodigoTipoEmpaquetado" ></select>
           <p>Imagen</p>
-          <input type="file" [(ngModel)]="producto.imagen" value="Seleccionar una imagen" >
+          <input type="file" [(ngModel)]="producto.imagen" >
       </div>
       <div class="form-group">
         <button [disabled]= "!forma.valid" type="submit" class="btn btn-outline-primary">Guardar</button>
