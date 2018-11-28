@@ -5,9 +5,9 @@
     <div class="col-md-12">
         <form (ngSubmit)="guardar()" #forma="ngForm">
             <div class="form-group">
-                <label for="txtContactoPrincipal">ContactoPrincipal</label>
-                <input placeholder="ContactoPrincipal" name="txtContactoPrincipal" [(ngModel)]="proveedor.contactoPrincipal" requeried class="from-control" id="txtcontactoPrincipal" type="text">
-                <label for="txtNit">NIT</label>
+                <label for="txtContactoPrincipal">ContactoPrincipal</label><br>
+                <input placeholder="ContactoPrincipal" name="txtContactoPrincipal" [(ngModel)]="proveedor.contactoPrincipal" requeried class="from-control" id="txtcontactoPrincipal" type="text"><br><br>
+                <label for="txtNit">NIT</label> <br>
                 <input placeholder="Nit" name="txtNit" [(ngModel)]="proveedor.nit" required class="form-control" id="txtNit" type="number">
                 <label for="txtPaginaWeb">Pagina Web</label>
                 <input placeholder="PaginaWeb" name="txtPaginaWeb" [(ngModel)]="proveedor.paginaWeb" required class="form-control" id="txtPaginaWeb" type="text">
