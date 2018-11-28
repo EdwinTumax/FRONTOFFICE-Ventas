@@ -11,8 +11,8 @@ import { ROUTES } from './app.routes';
 
 // Servicios
 
-import {CategoriaService} from './services/categoria.service';
-import {LoginService} from './services/login.service';
+import { CategoriaService } from './services/categoria.service';
+import { LoginService } from './services/login.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -42,7 +42,7 @@ import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, { useHash: true})
+    RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [CategoriaService, LoginService],
   bootstrap: [AppComponent]

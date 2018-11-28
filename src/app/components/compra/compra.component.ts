@@ -13,6 +13,7 @@ export class CompraComponent implements OnInit {
   constructor(private _compraService: CompraService) {
     this.loading = true;
     this._compraService.getCompras().subscribe((data: any) => {
+      console.log(data);
       this.compras = data;
       this.loading = false;
     });

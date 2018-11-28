@@ -11,8 +11,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class AddUdpateCompraComponent implements OnInit {
   compra: Compra = {
     numeroDocumento: 0,
-    fecha: new Date(''),
-    total: 0.0
+    nombreUsuario: '',
+    fecha: new Date(),
+    totalCompra: 0.0,
+    proveedor: null,
+    detalleCompras: []
   };
   nuevo = false;
   constructor(private _activatedRoute: ActivatedRoute, private _compraService: CompraService, private _router: Router) {
@@ -28,6 +31,20 @@ export class AddUdpateCompraComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  guardar() {
+    if (this.nuevo) {
+      this._compraService.addCompra(this.compra).subscribe(data => {
+        console.log(data);
+        this._router.navigate(['/compra']);
+      });
+    } else {
+      this._compraService.updateCompra(this.compra).subscribe(data => {
+        console.log(data);
+        this._router.navigate(['/compra']);
+      });
+    }
   }
 
 }

@@ -1,6 +1,8 @@
 export interface Compra {
   'numeroDocumento': number;
   'fecha': Date;
-  'total': number;
-  // 'proveedor': string;
+  'nombreUsuario': string;
+  'totalCompra': number;
+  'proveedor': any;
+  'detalleCompras': any[];
 }

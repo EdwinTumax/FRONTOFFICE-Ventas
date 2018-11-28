@@ -34,7 +34,7 @@ export class CompraService {
   getHeaders() {
     const headers = new HttpHeaders()
       .set('Content-Type', 'Application/json')
-      .set('Authorization', `Bearer ${window.sessionStorage.getItem('access-token')}`);
+      .set('Authorization', `Bearer ${window.sessionStorage.getItem('access_token')}`);
     return headers;
   }
 }

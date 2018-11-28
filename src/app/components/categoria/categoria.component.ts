@@ -12,7 +12,7 @@ export class CategoriaComponent implements OnInit {
   loading = false;
   constructor(private _categoriaService: CategoriaService) {
     this.loading = true;
-    this._categoriaService.getCategorias().subscribe( (data: any) => {
+    this._categoriaService.getCategorias().subscribe((data: any) => {
       this.categorias = data;
       this.loading = false;
     });
@@ -20,7 +20,7 @@ export class CategoriaComponent implements OnInit {
   eliminar(index: number) {
     const registro = this.categorias[index];
     this._categoriaService.deleteCategoria(registro.codigoCategoria).subscribe((data) => {
-        this.categorias.splice(index, index + 1);
+      this.categorias.splice(index, index + 1);
     });
   }
   ngOnInit() {
