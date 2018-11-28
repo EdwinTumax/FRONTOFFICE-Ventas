@@ -3,12 +3,14 @@ import { Usuario } from '../../interfaces/usuario.interface';
 import { NgForm } from '@angular/forms';
 import { UsuarioService } from './../../../services/usuario.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { RolService } from 'src/app/services/rol.service';
 @Component({
   selector: 'app-add-update-usuario',
   templateUrl: './add-update-usuario.component.html',
   styles: []
 })
 export class AddUpdateUsuarioComponent implements OnInit {
+  roles: any[] = [];
     usuario: Usuario = {
     codigoUsuario: 0,
     email: '',
@@ -17,7 +19,10 @@ export class AddUpdateUsuarioComponent implements OnInit {
     codigoRol: 0
   };
   nuevo = false;
-  constructor(private _activatedRoute: ActivatedRoute, private _usuarioService: UsuarioService, private _router: Router) {
+  constructor(private _activatedRoute: ActivatedRoute,
+    private _usuarioService: UsuarioService,
+    private _router: Router,
+    private _rolService: RolService) {
     this._activatedRoute.params.subscribe(params => {
       if ( params['id'] > 0) {
         this._usuarioService.getUsuario(params['id']).subscribe((data: any) => {
@@ -30,6 +35,13 @@ export class AddUpdateUsuarioComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.obtenerRoles();
+  }
+
+  obtenerRoles() {
+    this._rolService.getRoles().subscribe( (data: any) => {
+      this.roles = data;
+    });
   }
 
   guardar() {
