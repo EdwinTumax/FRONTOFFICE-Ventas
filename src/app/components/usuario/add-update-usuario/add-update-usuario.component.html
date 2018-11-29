@@ -1,0 +1,34 @@
+<head>Usuario</head>
+<button [routerLink]="['/usuario']" class="btn btn-outline-primary">Regresar</button>
+<hr>
+<div class="row">
+    <div class="col-md-12">
+        <form (ngSubmit) = "guardar()" #forma = "ngForm">
+          <div class="form-group">
+            <label for="txtNombre">Nombre</label>
+            <input placeholder="Nombre" name="txtNombre" [(ngModel)]="usuario.nombre" required class="form-control" id="txtNombre" type="text">
+          </div>
+          <div class="form-group">
+            <label for="txtEmail">Email</label>
+            <input placeholder="Email" name="txtEmail" [(ngModel)]="usuario.email" required class="form-control" id="txtEmail" type="text">
+          </div> 
+          <div class="form-group">
+            <label for="txtPassword">Password</label>
+            <input placeholder="Password" name="txtPassword" [(ngModel)]="usuario.password" required class="form-control" id="txtPassword" type="text">
+          </div>
+          <div class="form-group">
+            <label for="txtCodigoRol">Codigo de Rol</label>
+            <!-- <input placeholder="CodigoRol" name="txtCodigoRol" [(ngModel)]="usuario.codigoRol" required class="form-control" id="txtCodigoRol" type="number"> -->
+            <select class="form-control" id="exampleFormControlSelect1" >
+                <option *ngFor = "let rol of roles">{{ rol.nombre }}</option>
+              </select>
+          </div>  
+          <div class="form-group">
+          <button [disabled]= "!forma.valid" type="submit" class="btn btn-outline-primary">Guardar</button>
+        </div>
+    </form>
+  </div>
+</div>
+
+
+  

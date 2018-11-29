@@ -13,6 +13,8 @@ import { ROUTES } from './app.routes';
 
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
+import {UsuarioService} from './services/usuario.service';
+import {RolService} from './services/rol.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -24,6 +26,10 @@ import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
+import { RolComponent } from './components/rol/rol.component';
+import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
 
 @NgModule({
@@ -37,6 +43,10 @@ import { AddUpdateFacturaComponent } from './components/factura/add-update-factu
     LoadingComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
+    UsuarioComponent,
+    AddUpdateUsuarioComponent,
+    RolComponent,
+    AddUpdateRolComponent,
   ],
   imports: [
     FormsModule,
@@ -45,7 +55,7 @@ import { AddUpdateFacturaComponent } from './components/factura/add-update-factu
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService],
+  providers: [CategoriaService, LoginService, UsuarioService, RolService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
