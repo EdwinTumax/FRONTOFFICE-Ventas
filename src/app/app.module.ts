@@ -34,6 +34,10 @@ import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.com
 import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
 import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
 import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-update-tipo-registro/add-update-tipo-registro.component';
+import { CompraComponent } from './components/compra/compra.component';
+import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/add-udpate-compra.component';
+import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
+import { AddUpdateDetalleCompraComponent } from './components/detalle-compra/add-update-detalle-compra/add-update-detalle-compra.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
@@ -65,6 +69,10 @@ import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-e
     AddUpdateTipoEmpaqueComponent,
     TipoRegistroComponent,
     AddUpdateTipoRegistroComponent,
+    CompraComponent,
+    AddUdpateCompraComponent,
+    DetalleCompraComponent,
+    AddUpdateDetalleCompraComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
     UsuarioComponent,
@@ -85,7 +93,7 @@ import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-e
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, { useHash: true})
+    RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [CategoriaService, LoginService, UsuarioService, RolService, TipoEmpaqueService],
   bootstrap: [AppComponent]

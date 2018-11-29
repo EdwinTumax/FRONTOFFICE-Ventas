@@ -1,0 +1,27 @@
+<head>Detalle compra</head>
+<button [routerLink]="['/compra']" class="btn btn-outline-primary">Regresar</button>
+<hr>
+<div class="row">
+  <div class="col-md-12">
+    <form (ngSubmit)="guardar()" #forma="ngForm">
+      <div class="form-group">
+        <label for="txtCantidad">Cantidad</label>
+        <input placeholder="Cantidad" name="txtCantidad" [(ngModel)]="detalleCompra.cantidad" required class="form-control" id="txtCantidad" type="text">
+        <label for="txtPrecio">Precio</label>
+        <input placeholder="Precio" name="txtPrecio" [(ngModel)]="detalleCompra.precio" required class="form-control" id="txtPrecio" type="text">
+        <label for="txtSubtotal">Subtotal</label>
+        <input placeholder="Subtotal" name="txtPrecio" [(ngModel)]="detalleCompra.subTotal" required class="form-control" id="txtPrecio" type="text">
+        <!-- <label for="cmbProveedor">Proveedor</label>
+        <select placeholder="Elige un proveedor..." id="cmbProveedor" class="form-control" ngModel="compra.proveedor.razonSocial">
+          <option select>Elige un proveedor...</option>
+          <option>tommy hilfiger</option>
+          <option>guess</option>
+          <option>aereopostal</option>
+        </select> -->
+      </div>
+      <div>
+        <button [disabled]="!forma.valid" type="submit" class="btn btn-outline-primary">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>

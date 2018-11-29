@@ -1,4 +1,4 @@
- import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 
 import { CategoriaComponent } from './components/categoria/categoria.component';
@@ -10,6 +10,10 @@ import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-upd
 import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
 import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
 import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-update-tipo-registro/add-update-tipo-registro.component';
+import { CompraComponent } from './components/compra/compra.component';
+import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/add-udpate-compra.component';
+import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
+import { AddUpdateDetalleCompraComponent } from './components/detalle-compra/add-update-detalle-compra/add-update-detalle-compra.component';
 
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
@@ -31,20 +35,26 @@ import { AddUpdateProductoComponent } from './components/producto/add-update-pro
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'telprov', component: TelprovComponent},
-    { path: 'emailprov', component: EmailprovComponent},
+    { path: 'telprov', component: TelprovComponent },
+    { path: 'emailprov', component: EmailprovComponent },
     { path: 'dirprov', component: DirprovComponent },
     { path: 'proveedor', component: ProveedorComponent },
     { path: 'categoria', component: CategoriaComponent },
     { path: 'categoria-add', component: AddUpdateCategoriaComponent },
     { path: 'categoria-update/:id', component: AddUpdateCategoriaComponent },
-    { path: 'tipo-empaque-update/:id', component: AddUpdateTipoEmpaqueComponent},
-    { path: 'tipo-empaque', component: TipoEmpaqueComponent},
-    { path: 'tipo-empaque-add', component: AddUpdateTipoEmpaqueComponent},
-    { path: 'tipo-registro', component: TipoRegistroComponent},
-    { path: 'tipo-registro-add', component: AddUpdateTipoRegistroComponent},
-    { path: 'tipo-registro-update/:id', component: AddUpdateTipoRegistroComponent},
-    { path: 'factura', component: FacturaComponent},
+    { path: 'tipo-empaque-update/:id', component: AddUpdateTipoEmpaqueComponent },
+    { path: 'tipo-empaque', component: TipoEmpaqueComponent },
+    { path: 'tipo-empaque-add', component: AddUpdateTipoEmpaqueComponent },
+    { path: 'tipo-registro', component: TipoRegistroComponent },
+    { path: 'tipo-registro-add', component: AddUpdateTipoRegistroComponent },
+    { path: 'tipo-registro-update/:id', component: AddUpdateTipoRegistroComponent },
+    { path: 'compra', component: CompraComponent },
+    { path: 'compra-add', component: AddUdpateCompraComponent },
+    { path: 'compra-update/:id', component: AddUdpateCompraComponent },
+    { path: 'detalle-compra', component: DetalleCompraComponent },
+    { path: 'detalle-compra-add', component: AddUpdateDetalleCompraComponent },
+    { path: 'detalle-compra-update/:id', component: AddUpdateDetalleCompraComponent },
+    { path: 'factura', component: FacturaComponent },
     { path: 'factura-add', component: AddUpdateFacturaComponent },
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
     { path: 'usuario', component: UsuarioComponent },
@@ -56,16 +66,16 @@ export const ROUTES: Routes = [
     { path: 'proveedor-add', component: AddUpdateProveedorComponent },
     { path: 'proveedor-update/:id', component: AddUpdateProveedorComponent },
     { path: 'dirprov-add', component: AddUpdateDirprovComponent },
-    { path: 'dirprov-update/:id', component: AddUpdateDirprovComponent},
-    { path: 'emailprov-add', component: AddUpdateEmailprovComponent},
-    { path: 'emailprov-update/:id', component: AddUpdateEmailprovComponent},
-    { path: 'telprov-add', component: AddUpdateTelprovComponent},
+    { path: 'dirprov-update/:id', component: AddUpdateDirprovComponent },
+    { path: 'emailprov-add', component: AddUpdateEmailprovComponent },
+    { path: 'emailprov-update/:id', component: AddUpdateEmailprovComponent },
+    { path: 'telprov-add', component: AddUpdateTelprovComponent },
     { path: 'telprov-update/:id', component: AddUpdateTelprovComponent },
     { path: 'login', component: LoginComponent },
     { path: 'producto', component: ProductoComponent },
-    { path: 'producto-add', component: AddUpdateProductoComponent},
+    { path: 'producto-add', component: AddUpdateProductoComponent },
     { path: 'producto-update/:id', component: AddUpdateProductoComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(ROUTES, {useHash: true});
+export const APP_ROUTING = RouterModule.forRoot(ROUTES, { useHash: true });
