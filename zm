@@ -1,0 +1,38 @@
+[33m54cea90[m[33m ([m[1;36mHEAD -> [m[1;32mFeature/CA001Usuarios[m[33m)[m Merge branch 'FFVRCTipoEmpaque' of https://github.com/EdwinTumax/FRONTOFFICE-Ventas into Feature/CA001Usuarios
+[33me8de3c4[m Preparando fusion
+[33m8674220[m[33m ([m[1;31morigin/FFVRCTipoEmpaque[m[33m)[m Preparando merge con developer
+[33m34230c0[m Pull con developer
+[33m65330b5[m CRUD completo
+[33m55b4088[m[33m ([m[1;31morigin/developer[m[33m, [m[1;32mdeveloper[m[33m)[m Arreglos para developer
+[33m80887bf[m Mantenimiento completo de Tipo empaque y Tipo Registro
+[33md6aaf73[m falta actualizar tipoEmpaque
+[33m10413f6[m[33m ([m[1;31morigin/Feature/CA001Usuarios[m[33m)[m Aplicando cambios
+[33mfcf9e03[m Seguridad
+[33m0e23182[m carga datos tipoEmpaque
+[33ma2d5cc0[m Clonando rama
+[33mf115093[m Correccion de Roles en Usuarios
+[33m73a594b[m arreglando errores
+[33m4b014df[m Agregando Combobox de Roles en Usuarios
+[33m5d8da3a[m[33m ([m[1;31morigin/FRaul/Factura[m[33m)[m Merge de developer a FRaul/Factura
+[33m089b833[m Fusion de rama com Facturas
+[33m6ea8ccd[m Preparando pull con FRaul
+[33m2e7cbd6[m Correccion en tabla de Roles
+[33md828392[m Funcionalidad completa tabla Factura
+[33m0f2edd9[m Footer
+[33m4443667[m Transicion de imagenes 1
+[33mfe898a7[m Transicion de imagenes
+[33m13d9fc3[m Creacion de vista y formulario de Usuarios
+[33m774dd85[m Fondo estatisco
+[33m7766f24[m Arreglando errores de Usuario
+[33me6dd1f6[m funciona
+[33mfbdae70[m arreglos
+[33mfffdc78[m Creacion de Usuarios
+[33m266567f[m Diseño Web en inicio y categoria
+[33m5e8e942[m CRUD Completo
+[33m2d5ea89[m Login
+[33m731c912[m Update Add
+[33m61d7d34[m Servicio GET
+[33mecb35a2[m Add query,bootstrap,popper.js
+[33maaf36a6[m Iniciando proyecto en GITHUB
+[33m2678b44[m initial commit
+[33me172eff[m Initial commit
