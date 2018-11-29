@@ -12,10 +12,12 @@ import { ROUTES } from './app.routes';
 // Servicios
 
 import {CategoriaService} from './services/categoria.service';
+import {ProductoService} from './services/producto.service';
 import {LoginService} from './services/login.service';
 import {UsuarioService} from './services/usuario.service';
 import {RolService} from './services/rol.service';
 
+import {TipoEmpaqueService} from './services/tipo_empaques.service';
 // Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
@@ -28,13 +30,17 @@ import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
-import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
 
+import { ProductoComponent } from './components/producto/producto.component';
+import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
+import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
+import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
+import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
 
 @NgModule({
   declarations: [
@@ -47,11 +53,16 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     LoadingComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
-    DetalleFacturaComponent,
     UsuarioComponent,
     AddUpdateUsuarioComponent,
     RolComponent,
     AddUpdateRolComponent,
+    ProductoComponent,
+    AddUpdateProductoComponent,
+    TipoEmpaqueComponent,
+    AddUpdateCategoriaComponent,
+    AddUpdateTipoEmpaqueComponent,
+    TipoRegistroComponent
   ],
   imports: [
     FormsModule,
@@ -60,7 +71,7 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService, UsuarioService, RolService],
+  providers: [CategoriaService, LoginService, UsuarioService, RolService, ProductoService, TipoEmpaqueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
