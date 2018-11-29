@@ -9,8 +9,12 @@ export class ProductoService {
 
   constructor(private _httpClient: HttpClient) { }
 
-  getProductos() {
-    return this._httpClient.get(`${URL_API}producto`, {headers: this.getHeaders()});
+  getProductos(termino?: string) {
+    if (termino) {
+      return this._httpClient.get(`${URL_API}producto?termino=${termino}`, {headers: this.getHeaders()});
+    } else {
+      return this._httpClient.get(`${URL_API}producto`, {headers: this.getHeaders()});
+    }
   }
 
   getProducto(id: number) {

@@ -41,6 +41,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
 import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -94,9 +95,13 @@ export const ROUTES: Routes = [
     { path: 'emailCliente-add', component: AddUpdateEmailClienteComponent},
     { path: 'emailCliente-update/:id', component: AddUpdateEmailClienteComponent},
     { path: 'login', component: LoginComponent },
+<<<<<<< HEAD
     { path: 'producto', component: ProductoComponent },
     { path: 'producto-add', component: AddUpdateProductoComponent },
     { path: 'producto-update/:id', component: AddUpdateProductoComponent },
+=======
+    { path: 'buscador/:termino', component: BuscadorComponent},
+>>>>>>> af204e6e51d766a19a5823da9c7dab52415c9a72
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

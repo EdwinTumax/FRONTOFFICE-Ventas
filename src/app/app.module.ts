@@ -65,6 +65,9 @@ import { TelClienteComponent } from './components/telCliente/telCliente.componen
 import { AddUpdateTelClienteComponent } from './components/telCliente/add-update-telCliente/add-update-telCliente.component';
 import { EmailClienteComponent } from './components/emailCliente/emailCliente.component';
 import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-update-emailCliente/add-update-emailCliente.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
+
+
 
 @NgModule({
   declarations: [
@@ -109,7 +112,8 @@ import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-upd
     EmailClienteComponent,
     AddUpdateTelClienteComponent,
     TelClienteComponent,
-    AddUpdateClienteComponent
+    AddUpdateClienteComponent,
+    BuscadorComponent,
   ],
   imports: [
     FormsModule,
