@@ -44,6 +44,7 @@ import { DetalleCompraComponent } from './components/detalle-compra/detalle-comp
 import { AddUpdateDetalleCompraComponent } from './components/detalle-compra/add-update-detalle-compra/add-update-detalle-compra.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
 import { RolComponent } from './components/rol/rol.component';
@@ -87,6 +88,7 @@ import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-upd
     AddUpdateDetalleCompraComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
+    DetalleFacturaComponent,
     UsuarioComponent,
     AddUpdateUsuarioComponent,
     RolComponent,

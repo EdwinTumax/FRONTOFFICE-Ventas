@@ -5,7 +5,6 @@
 export const environment = {
   production: false
 };
-
 // export const URL_API = 'http://localhost:9300/api/v1/';
 export const URL_API = 'http://192.168.136.254:9300/api/v1/';
 // export const URL_AUT = 'http://localhost:9300/oauth/token';

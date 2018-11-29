@@ -40,6 +40,7 @@ import { AddUpdateFacturaComponent } from './components/factura/add-update-factu
 import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
 
+import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 
 
 export const ROUTES: Routes = [
@@ -66,6 +67,7 @@ export const ROUTES: Routes = [
     { path: 'factura', component: FacturaComponent },
     { path: 'factura-add', component: AddUpdateFacturaComponent },
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
+    { path: 'detalle-factura/:id' , component: DetalleFacturaComponent},
     { path: 'usuario', component: UsuarioComponent },
     { path: 'usuario-add', component: AddUpdateUsuarioComponent },
     { path: 'usuario-update/:id', component: AddUpdateUsuarioComponent },
