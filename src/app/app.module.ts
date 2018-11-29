@@ -17,6 +17,10 @@ import {LoginService} from './services/login.service';
 import {TipoEmpaqueService} from './services/tipo_empaques.service';
 import {UsuarioService} from './services/usuario.service';
 import {RolService} from './services/rol.service';
+import {ClienteService } from './services/cliente.service';
+import {DirClienteService} from './services/dirCliente.service';
+import {EmailClienteService} from './services/emailCliente.service';
+import {TelClienteService} from './services/telCliente.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -52,6 +56,14 @@ import { TelprovComponent } from './components/telprov/telprov.component';
 import { AddUpdateTelprovComponent } from './components/telprov/add-update-telprov/add-update-telprov.component';
 import { EmailprovComponent } from './components/emailprov/emailprov.component';
 import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-emailprov/add-update-emailprov.component';
+import { AddUpdateClienteComponent } from './components/cliente/add-update-cliente/add-update-cliente.component';
+import { AddUpdateDirClienteComponent } from './components/dirCliente/add-update-dirCliente/add-update-dirCliente.component';
+import { ClienteComponent} from './components/cliente/cliente.component';
+import { DirClienteComponent} from './components/dirCliente/dirCliente.component';
+import { TelClienteComponent } from './components/telCliente/telCliente.component';
+import { AddUpdateTelClienteComponent } from './components/telCliente/add-update-telCliente/add-update-telCliente.component';
+import { EmailClienteComponent } from './components/emailCliente/emailCliente.component';
+import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-update-emailCliente/add-update-emailCliente.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +99,15 @@ import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-e
     AddUpdateTelprovComponent,
     EmailprovComponent,
     AddUpdateEmailprovComponent,
+    AddUpdateCategoriaComponent,
+    AddUpdateDirClienteComponent,
+    ClienteComponent,
+    DirClienteComponent,
+    AddUpdateEmailClienteComponent,
+    EmailClienteComponent,
+    AddUpdateTelClienteComponent,
+    TelClienteComponent,
+    AddUpdateClienteComponent
   ],
   imports: [
     FormsModule,
@@ -95,7 +116,7 @@ import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-e
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: [CategoriaService, LoginService, UsuarioService, RolService, TipoEmpaqueService],
+  providers: [CategoriaService, LoginService, UsuarioService, RolService, TipoEmpaqueService, ClienteService, DirClienteService, EmailClienteService, TelClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

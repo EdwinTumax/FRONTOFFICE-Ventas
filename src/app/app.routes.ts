@@ -26,11 +26,20 @@ import { EmailprovComponent } from './components/emailprov/emailprov.component';
 import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-emailprov/add-update-emailprov.component';
 import { TelprovComponent } from './components/telprov/telprov.component';
 import { AddUpdateTelprovComponent } from './components/telprov/add-update-telprov/add-update-telprov.component';
+import { AddUpdateClienteComponent} from './components/cliente/add-update-cliente/add-update-cliente.component';
+import { ClienteComponent} from './components/cliente/cliente.component';
+import { AddUpdateTelClienteComponent} from './components/telCliente/add-update-telCliente/add-update-telCliente.component';
+import { TelClienteComponent} from './components/telCliente/telCliente.component';
+import { AddUpdateDirClienteComponent} from './components/dirCliente/add-update-dirCliente/add-update-dirCliente.component';
+import { DirClienteComponent} from './components/dirCliente/dirCliente.component';
+import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-update-emailCliente/add-update-emailCliente.component';
+import { EmailClienteComponent} from './components/emailCliente/emailCliente.component';
 import { LoginComponent } from './components/login/login.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
+
 
 
 export const ROUTES: Routes = [
@@ -71,6 +80,18 @@ export const ROUTES: Routes = [
     { path: 'emailprov-update/:id', component: AddUpdateEmailprovComponent },
     { path: 'telprov-add', component: AddUpdateTelprovComponent },
     { path: 'telprov-update/:id', component: AddUpdateTelprovComponent },
+    { path: 'cliente', component: ClienteComponent},
+    { path: 'cliente-add', component: AddUpdateClienteComponent},
+    { path: 'cliente-update/:id', component: AddUpdateClienteComponent},
+    { path: 'telCliente', component: TelClienteComponent},
+    { path: 'telCliente-add', component: AddUpdateTelClienteComponent},
+    { path: 'telCliente-update/:id', component: AddUpdateTelClienteComponent},
+    { path: 'dirCliente', component: DirClienteComponent},
+    { path: 'dirCliente-add', component: AddUpdateDirClienteComponent},
+    { path: 'dirCliente-update/:id', component: AddUpdateDirClienteComponent},
+    { path: 'emailCliente', component: EmailClienteComponent},
+    { path: 'emailCliente-add', component: AddUpdateEmailClienteComponent},
+    { path: 'emailCliente-update/:id', component: AddUpdateEmailClienteComponent},
     { path: 'login', component: LoginComponent },
     { path: 'producto', component: ProductoComponent },
     { path: 'producto-add', component: AddUpdateProductoComponent },
