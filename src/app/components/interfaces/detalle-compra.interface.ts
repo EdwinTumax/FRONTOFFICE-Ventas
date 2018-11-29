@@ -1,6 +1,7 @@
 export interface DetalleCompra {
   'codigoDetalleCompra': number;
-  'direccion': string;
-  'descripcion': string;
-  'proveedor': any;
+  'cantidad': number;
+  'precio': number;
+  'subTotal': number;
+  'producto': any;
 }
