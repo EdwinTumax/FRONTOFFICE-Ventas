@@ -29,7 +29,7 @@ export class EmailProveedorService {
   }
 
   deleteEmailProveedor(id: number) {
-    return this._httpClient.delete(`${URL_API}emailProveedor/${id}`, {headers: this.getHeaders()});
+    return this._httpClient.delete(`${URL_API}email-proveedor/${id}`, {headers: this.getHeaders()});
   }
 
   getHeaders() {

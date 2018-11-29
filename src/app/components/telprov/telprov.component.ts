@@ -19,7 +19,7 @@ export class TelprovComponent implements OnInit {
   }
   eliminar(index: number) {
     const registro = this.telefonoProveedores[index];
-    this._telefonoProveedorService.deleteTelefonoProveedor(registro.codigoTelefonoProveedor).subscribe((data) => {
+    this._telefonoProveedorService.deleteTelefonoProveedor(registro.codigoTelefono).subscribe((data) => {
         this.telefonoProveedores.splice(index, index + 1);
     });
   }

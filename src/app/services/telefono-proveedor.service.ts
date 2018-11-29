@@ -29,7 +29,7 @@ export class TelefonoProveedorService {
   }
 
   deleteTelefonoProveedor(id: number) {
-    return this._httpClient.delete(`${URL_API}telefonoProveedor/${id}`, {headers: this.getHeaders()});
+    return this._httpClient.delete(`${URL_API}telefono-proveedor/${id}`, {headers: this.getHeaders()});
   }
 
   getHeaders() {

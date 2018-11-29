@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { EmailProveedorService } from '../../services/email-proveedor.service';
 import { EmailProveedor } from './../interfaces/emailProveedor.interface';
+import { Proveedor } from '../interfaces/proveedor.interface';
+import { ProveedorComponent } from '../proveedor/proveedor.component';
 @Component({
   selector: 'app-emailprov',
   templateUrl: './emailprov.component.html',
@@ -19,7 +21,7 @@ export class EmailprovComponent implements OnInit {
   }
   eliminar(index: number) {
     const registro = this.emailProveedores[index];
-    this._emailProveedorService.deleteEmailProveedor(registro.codigoEmailProveedor).subscribe((data) => {
+    this._emailProveedorService.deleteEmailProveedor(registro.codigoEmail).subscribe((data) => {
         this.emailProveedores.splice(index, index + 1);
     });
   }

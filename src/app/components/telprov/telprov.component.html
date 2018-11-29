@@ -18,8 +18,8 @@
                 <th scope="row">{{ i + 1}}</th>
                 <td>{{ telefonoProveedor.codigoDireccion}}</td>
                 <td>{{ telefonoProveedor.descripcion}}</td>
-                <td>{{ telefonoProveedor.email}}</td>
-                <td>{{ telefonoProveedor.codigoProveedor}}</td>
+                <td>{{ telefonoProveedor.numeroTelefono}}</td>
+                <td>{{ telefonoProveedor.proveedor.codigoProveedor}}</td>
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/telprov-update',telefonoProveedor.codigoTelefono]" class="btn btn-success w120">Editar</button>

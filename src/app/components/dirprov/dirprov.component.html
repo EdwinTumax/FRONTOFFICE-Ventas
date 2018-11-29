@@ -19,7 +19,7 @@
                 <td>{{ direccionProveedor.codigoDireccion}}</td>
                 <td>{{ direccionProveedor.descripcion}}</td>
                 <td>{{ direccionProveedor.direccion}}</td>
-                <td>{{ direccionProveedor.codigoProveedor}}</td>
+                <td>{{ direccionProveedor.proveedor.codigoProveedor}}</td>
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/dirprov-update',direccionProveedor.codigoDireccion]" class="btn btn-success w120">Editar</button>

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { EmailProveedor } from '../../interfaces/emailProveedor.interface';
 import { NgForm } from '@angular/forms';
 import { EmailProveedorService } from './../../../services/email-proveedor.service';
+import { Proveedor } from '../../interfaces/proveedor.interface';
+import { ProveedorService } from '../../../services/proveedor.service';
 import { Router, ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-add-update-emailprov',
@@ -9,15 +11,18 @@ import { Router, ActivatedRoute } from '@angular/router';
   styles: []
 })
 export class AddUpdateEmailprovComponent implements OnInit {
-
+  proveedores: any[] = [];
   emailProveedor: EmailProveedor = {
     codigoEmail: 0,
     descripcion: '',
     email: '',
-    codigoProveedor: 0
+    proveedor: { codigoProveedor: 0, contactoPrincipal: '', nit: 0, paginaWeb: '', razonSocial: ''},
   };
   nuevo = false;
-  constructor(private _activatedRoute: ActivatedRoute, private _emailprovService: EmailProveedorService, private _router: Router) {
+  constructor(private _activatedRoute: ActivatedRoute,
+     private _emailprovService: EmailProveedorService,
+     private _proveedorService: ProveedorService,
+     private _router: Router) {
     this._activatedRoute.params.subscribe(params => {
       if ( params['id'] > 0) {
         this._emailprovService.getEmailProveedor(params['id']).subscribe((data: any) => {
@@ -28,8 +33,17 @@ export class AddUpdateEmailprovComponent implements OnInit {
       }
     });
    }
+   obtenerProveedores() {
+    this._proveedorService.getProveedores().subscribe( (data: any) => {
+      this.proveedores = data;
+    });
+  }
+  async proveedorChange(event: any): Promise<void> {
+    console.log(event);
+  }
 
   ngOnInit() {
+    this.obtenerProveedores();
   }
 
   guardar() {

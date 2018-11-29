@@ -19,7 +19,7 @@
                 <td>{{ emailProveedor.codigoDireccion}}</td>
                 <td>{{ emailProveedor.descripcion}}</td>
                 <td>{{ emailProveedor.email}}</td>
-                <td>{{ emailProveedor.codigoProveedor}}</td>
+                <td>{{ emailProveedor.proveedor.codigoProveedor}}</td>
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/emailprov-update',emailProveedor.codigoEmail]" class="btn btn-success w120">Editar</button>

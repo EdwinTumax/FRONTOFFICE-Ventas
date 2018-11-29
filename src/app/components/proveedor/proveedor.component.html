@@ -22,7 +22,6 @@
                 <td>{{ proveedor.nit}}</td>
                 <td>{{ proveedor.paginaWeb}}</td>
                 <td>{{ proveedor.razonSocial}}</td>
-                <td>{{ proveedor.opciones}}</td>
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/proveedor-update',proveedor.codigoProveedor]" class="btn btn-success w120">Editar</button>

@@ -3,20 +3,26 @@ import { DireccionProveedor } from '../../interfaces/direccionProveedor.interfac
 import { NgForm } from '@angular/forms';
 import { DireccionProveedorService } from './../../../services/direccion-proveedor.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Proveedor } from '../../interfaces/proveedor.interface';
+import { ProveedorService } from '../../../services/proveedor.service';
 @Component({
   selector: 'app-add-update-dirprov',
   templateUrl: './add-update-dirprov.component.html',
   styleUrls: []
 })
 export class AddUpdateDirprovComponent implements OnInit {
+  proveedores: any[] = [];
   direccionProveedor: DireccionProveedor = {
     codigoDireccion: 0,
     descripcion: '',
     direccion: '',
-    codigoProveedor: 0
+    proveedor: { codigoProveedor: 0, contactoPrincipal: '', nit: 0, paginaWeb: '', razonSocial: ''},
   };
   nuevo = false;
-  constructor(private _activatedRoute: ActivatedRoute, private _dirprovService: DireccionProveedorService, private _router: Router) {
+  constructor(private _activatedRoute: ActivatedRoute,
+    private _dirprovService: DireccionProveedorService,
+    private _proveedorService: ProveedorService,
+    private _router: Router) {
     this._activatedRoute.params.subscribe(params => {
       if ( params['id'] > 0) {
         this._dirprovService.getDireccionProveedor(params['id']).subscribe((data: any) => {
@@ -27,10 +33,18 @@ export class AddUpdateDirprovComponent implements OnInit {
       }
     });
    }
-
-  ngOnInit() {
+   obtenerProveedores() {
+    this._proveedorService.getProveedores().subscribe( (data: any) => {
+      this.proveedores = data;
+    });
+  }
+  async proveedorChange(event: any): Promise<void> {
+    console.log(event);
   }
 
+  ngOnInit() {
+    this.obtenerProveedores();
+  }
   guardar() {
     if ( this.nuevo ) {
       this._dirprovService.addDireccionProveedor(this.direccionProveedor).subscribe(data => {

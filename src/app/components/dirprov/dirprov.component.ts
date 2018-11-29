@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DireccionProveedorService } from '../../services/direccion-proveedor.service';
 import { DireccionProveedor } from './../interfaces/direccionProveedor.interface';
+import { Proveedor } from '../interfaces/proveedor.interface';
+import { ProveedorComponent } from '../proveedor/proveedor.component';
 
 @Component({
   selector: 'app-dirprov',
@@ -8,7 +10,6 @@ import { DireccionProveedor } from './../interfaces/direccionProveedor.interface
   styleUrls: []
 })
 export class DirprovComponent implements OnInit {
-
   direccionProveedores: any[] = [];
   loading = false;
   constructor(private _direccionProveedorService: DireccionProveedorService) {
