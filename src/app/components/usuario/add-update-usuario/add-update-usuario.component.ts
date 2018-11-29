@@ -53,13 +53,17 @@ export class AddUpdateUsuarioComponent implements OnInit {
   }
 
   guardar() {
+    console.log('Entre a guardar');
     if ( this.nuevo ) {
+      console.log('entre a nuevo');
       console.log(this.usuario);
        this._usuarioService.addUsuario(this.usuario).subscribe(data => {
         console.log(data);
         this._router.navigate(['/usuario']);
       });
     } else {
+      console.log('entre a actualizar');
+      console.log(this.usuario);
       this._usuarioService.updateUsuario(this.usuario).subscribe(data => {
         console.log(data);
         this._router.navigate(['/usuario']);
