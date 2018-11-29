@@ -34,8 +34,6 @@ export class AddUpdateFacturaComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
   guardar() {
     if ( this.nuevo ) {
       this._facturaService.addFactura(this.factura).subscribe(data => {

@@ -20,7 +20,21 @@ export class DetalleFacturaService {
     return this._httpClient.get(`${URL_API}detalle-factura`, {headers: this.getHeaders()});
   }
 
-  getCategoria(id: number) {
+  getDetalleFactura(id: number) {
     return this._httpClient.get(`${URL_API}detalle-factura/${id}`, {headers: this.getHeaders()});
+  }
+
+  addDetalleFactura(detalleFactura: DetalleFactura) {
+    const body = JSON.stringify(detalleFactura);
+    return this._httpClient.post(`${URL_API}detalle-factura`, body, {headers: this.getHeaders()});
+  }
+
+  updateDetalleFactura(detalleFactura: DetalleFactura) {
+    const body = JSON.stringify(detalleFactura);
+    return this._httpClient.put(`${URL_API}detalle-factura/${detalleFactura.codigoFacturaDetalle}`, body, {headers: this.getHeaders()});
+  }
+
+  deleteFactura(id: number) {
+    return this._httpClient.delete(`${URL_API}detalle-factura/${id}`, {headers: this.getHeaders()});
   }
 }

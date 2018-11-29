@@ -2,6 +2,18 @@
 <h1 class="text-center color1">Detalle Factura</h1>
 <hr style="border-color:white;">
 <div class="container m-5 animated fadeIn">
+    <div class="form-group">
+        <label style="color: white" for="txtNumeroFactura">Numero Factura</label>
+        <input placeholder="Numero Factura" name="txtNumeroFactura" [(ngModel)]="factura.numeroFactura" required class="form-control" id="txtNumeroFactura" type="text">
+    </div>
+    <div class="form-group">
+        <label for="txtMontoTotal">Monto Total</label>
+        <input placeholder="Monto Total" name="txtMontoTotal" [(ngModel)]="factura.total" required class="form-control" id="txtMontoTotal" type="text">
+    </div>
+    <div class="form-group">
+        <label for="txtFecha">Fecha</label>
+        <input placeholder="Fecha Factura" name="txtFecha" [(ngModel)]="factura.fechaFactura" required class="form-control" id="txtFecha" type="date">
+    </div>
     <button [routerLink]="['/detalle-factura-add']" class="btn btn-outline-secondary w120 zoom">Agregar</button>
     <button [routerLink]="['/factura']" class="btn btn-outline-secondary w120 zoom">Volver</button>
     <br><br>
@@ -24,7 +36,7 @@
                 <td>{{ detalleFactura.cantidad}}</td>
                 <td>{{ detalleFactura.subTotal}}</td>
                 <td>
-                    <button class="btn btn-danger w120">Delete</button>
+                    <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/factura-update',factura.codigoFactura]" class="btn btn-success w120">Editar</button>
                 </td>
             </tr>

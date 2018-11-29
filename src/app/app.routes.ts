@@ -19,6 +19,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
 import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
+ 
 
 
 
