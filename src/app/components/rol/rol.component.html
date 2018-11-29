@@ -7,7 +7,7 @@
 <table class="table color1 text-center">
   <thead class="thead-dark">
     <tr class="text-center color1">
-      <th scope="col">#</th>
+      <th scope="col">NO.</th>
       <th scope="col">CODIGO</th>
       <th scope="col">NOMBRE</th>
       <th scope="col">DESCRIPCION</th>
@@ -21,7 +21,7 @@
       <td>{{ rol.nombre}}</td>
       <td>{{ rol.descripcion}}</td>
       <td> 
-          <button (click) = "eliminar(i)" class="btn btn-danger w120">Delete</button> 
+          <button (click) = "eliminar(i)" class="btn btn-danger w120">Eliminar</button> 
         <button [routerLink]="['/rol-update',rol.codigoRol]" class="btn btn-success w120">Editar</button>
       </td>      
     </tr>

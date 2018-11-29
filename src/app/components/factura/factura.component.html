@@ -7,9 +7,9 @@
     <table class="table color1 text-center">
         <thead class="thead-dark">
             <tr>
-                <th scope="col">#</th>
+                <th scope="col">NO.</th>
                 <th scope="col">CODIGO FACTURA</th>
-                <th scope="col">#Numero FACTURA</th>
+                <th scope="col">#NUMERO FACTURA</th>
                 <th scope="col">SERIE</th>
                 <th scope="col">FECHA</th>
                 <th scope="col">MONTO TOTAL</th>
@@ -27,7 +27,7 @@
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/factura-update',factura.codigoFactura]" class="btn btn-success w120">Editar</button>
-                    <button [routerLink]="['/categoria-update',factura.codigoFactura]" class="btn btn-info w120">Detalle</button>
+                    <button [routerLink]="['/detalle-factura', factura.codigoFactura]" class="btn btn-info w120">Detalle</button>
                 </td>
             </tr>
         </tbody>

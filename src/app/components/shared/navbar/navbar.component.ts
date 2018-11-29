@@ -7,9 +7,8 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   user: any;
-  constructor(private _loginService: LoginService, private _router: Router) { 
+  constructor(private _loginService: LoginService, private _router: Router) {
     this.user = JSON.parse(sessionStorage.getItem('usuario'));
-    console.log(this.user);
   }
 
   ngOnInit() {
@@ -20,4 +19,9 @@ export class NavbarComponent implements OnInit {
     window.location.reload();
     this._router.navigateByUrl('/login');
   }
+
+  buscar(termino: string) {
+    this._router.navigate(['/buscador', termino]);
+  }
+
 }
