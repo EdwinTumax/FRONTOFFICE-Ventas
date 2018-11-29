@@ -22,9 +22,8 @@
       <td>{{ producto.tipoEmpaque.descripcion}}</td>
       <td>{{ producto.categoria.descripcion}}</td>
       <td><img src="assets/img/{{producto.imagen}}" height="100" width="100"></td> 
-      <!-- <td>{{ producto.imagen }}</td> -->
       <td> 
-        <button (click) = "eliminar(i)" class="btn btn-danger w120">Delete</button> 
+        <button (click) = "eliminar(i)" class="btn btn-danger w120">Delete</button>
         <button [routerLink]="['/producto-update',producto.codigoProducto]" class="btn btn-success w120">Editar</button>
       </td>      
     </tr>

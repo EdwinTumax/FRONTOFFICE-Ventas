@@ -39,6 +39,11 @@ export class AddUpdateProductoComponent implements OnInit {
     });
   }
 
+//  obtenerNombre() {
+//     let archivo = this.producto.imagen;
+//     console.log('(-4):' + archivo.substr(-4));
+//  }
+
   obtenerTipoEmpaques() {
     this._tipoEmpaqueService.getTipoEmpaques().subscribe((data: any) => {
   this.tipo_empaques = data;
