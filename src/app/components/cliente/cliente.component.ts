@@ -21,7 +21,7 @@ export class ClienteComponent implements OnInit {
   }
   eliminar(index: number) {
     const registro = this.clientes[index];
-    this._clienteService.deleteCliente(registro.codigoCliente).subscribe((data) => {
+    this._clienteService.deleteCliente(registro.codigocliente).subscribe((data) => {
         this.clientes.splice(index, index + 1);
     });
   }

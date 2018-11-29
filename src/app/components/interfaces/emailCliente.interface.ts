@@ -1,6 +1,6 @@
-export interface EmailCliente{
+export interface EmailCliente {
     'codigoEmail': number;
     'descripcion': string;
     'email': string;
-    'codigoEmail: number';
+    'codigoCliente': number;
 }

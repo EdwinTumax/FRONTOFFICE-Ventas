@@ -1,5 +1,5 @@
 export interface Cliente {
-    'codigoCliente': number;
+    'codigocliente': number;
     'dpi': number;
     'nit': number;
     'nombre': string;

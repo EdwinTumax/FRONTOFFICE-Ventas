@@ -11,8 +11,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class AddUpdateDirClienteComponent implements OnInit {
   dirCliente: DirCliente = {
     codigoDireccion: 0,
-    descripcion: "",
-    direccion: "",
+    descripcion: '',
+    direccion: '',
     codigoCliente: 0
   };
   nuevo = false;

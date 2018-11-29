@@ -10,7 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class AddUpdateClienteComponent implements OnInit {
   cliente: Cliente = {
-    codigoCliente: 0,
+    codigocliente: 0,
     dpi: 0,
     nit: 0,
     nombre: ''

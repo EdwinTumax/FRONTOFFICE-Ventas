@@ -1,4 +1,4 @@
-export interface DirCliente{
+export interface DirCliente {
     'codigoDireccion': number;
     'descripcion': string;
     'direccion': string;

@@ -23,7 +23,7 @@ export class ClienteService {
 
   updateCliente(cliente: Cliente) {
     const body = JSON.stringify(cliente);
-    return this._httpClient.put(`${URL_API}cliente/${cliente.codigoCliente}`, body, {headers: this.getHeaders()});
+    return this._httpClient.put(`${URL_API}cliente/${cliente.codigocliente}`, body, {headers: this.getHeaders()});
   }
 
   deleteCliente(id: number) {

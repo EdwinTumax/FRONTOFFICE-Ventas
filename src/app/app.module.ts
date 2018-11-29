@@ -15,6 +15,8 @@ import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
 import {ClienteService } from './services/cliente.service';
 import {DirClienteService} from './services/dirCliente.service';
+import {EmailClienteService} from './services/emailCliente.service';
+import {TelClienteService} from './services/telCliente.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -30,6 +32,8 @@ import { ClienteComponent} from './components/cliente/cliente.component';
 import { DirClienteComponent} from './components/dirCliente/dirCliente.component';
 import { TelClienteComponent } from './components/telCliente/telCliente.component';
 import { AddUpdateTelClienteComponent } from './components/telCliente/add-update-telCliente/add-update-telCliente.component';
+import { EmailClienteComponent } from './components/emailCliente/emailCliente.component';
+import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-update-emailCliente/add-update-emailCliente.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,12 @@ import { AddUpdateTelClienteComponent } from './components/telCliente/add-update
     AddUpdateCategoriaComponent,
     AddUpdateDirClienteComponent,
     ClienteComponent,
-    DirClienteComponent
+    DirClienteComponent,
+    AddUpdateEmailClienteComponent,
+    EmailClienteComponent,
+    AddUpdateTelClienteComponent,
+    TelClienteComponent,
+    AddUpdateClienteComponent
   ],
   imports: [
     FormsModule,
@@ -52,7 +61,7 @@ import { AddUpdateTelClienteComponent } from './components/telCliente/add-update
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService],
+  providers: [CategoriaService, LoginService, ClienteService, DirClienteService, EmailClienteService, TelClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

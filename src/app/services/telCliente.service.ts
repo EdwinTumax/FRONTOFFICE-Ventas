@@ -9,25 +9,25 @@ export class TelClienteService {
   constructor(private _httpClient: HttpClient) { }
 
   getTelClientes() {
-    return this._httpClient.get(`${URL_API}telCliente`, {headers: this.getHeaders()});
+    return this._httpClient.get(`${URL_API}telefono-cliente`, {headers: this.getHeaders()});
   }
 
   getTelCliente(id: number) {
-    return this._httpClient.get(`${URL_API}telCliente/${id}`, {headers: this.getHeaders()});
+    return this._httpClient.get(`${URL_API}telefono-cliente/${id}`, {headers: this.getHeaders()});
   }
 
   addTelCliente(telCliente: TelCliente) {
     const body = JSON.stringify(telCliente);
-    return this._httpClient.post(`${URL_API}telCliente`, body, {headers: this.getHeaders()});
+    return this._httpClient.post(`${URL_API}telefono-cliente`, body, {headers: this.getHeaders()});
   }
 
   updateTelCliente(telCliente: TelCliente) {
     const body = JSON.stringify(telCliente);
-    return this._httpClient.put(`${URL_API}telCliente/${telCliente.codigoTelefono}`, body, {headers: this.getHeaders()});
+    return this._httpClient.put(`${URL_API}telefono-cliente/${telCliente.codigoTelefono}`, body, {headers: this.getHeaders()});
   }
 
   deleteTelCliente(id: number) {
-    return this._httpClient.delete(`${URL_API}telCliente/${id}`, {headers: this.getHeaders()});
+    return this._httpClient.delete(`${URL_API}telefono-cliente/${id}`, {headers: this.getHeaders()});
   }
 
   getHeaders() {

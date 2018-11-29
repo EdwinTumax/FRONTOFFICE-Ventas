@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { TelCliente } from '../../interfaces/telCliente.interface';
+import { DirCliente } from '../../interfaces/dirCliente.interface';
 import { NgForm } from '@angular/forms';
 import { TelClienteService } from './../../../services/telCliente.service';
 import { Router, ActivatedRoute } from '@angular/router';
+import { TelClienteComponent } from '../telCliente.component';
+import { TelCliente } from '../../interfaces/telCliente.interface';
 @Component({
   selector: 'app-add-update-telCliente',
-  templateUrl: './add-update-telCiente.component.html',
+  templateUrl: './add-update-telCliente.component.html',
   styles: []
 })
 export class AddUpdateTelClienteComponent implements OnInit {
   telCliente: TelCliente = {
     codigoTelefono: 0,
-    descripcion: "",
+    descripcion: '',
     numeroTelefono: 0,
     codigoCliente: 0
   };
@@ -30,12 +32,11 @@ export class AddUpdateTelClienteComponent implements OnInit {
 
   ngOnInit() {
   }
-
   guardar() {
     if (this.nuevo) {
       this._telClienteService.addTelCliente(this.telCliente).subscribe(data => {
         console.log(data);
-        this._router.navigate(['/TelCliente']);
+        this._router.navigate(['/telCliente']);
       });
     } else {
       this._telClienteService.updateTelCliente(this.telCliente).subscribe(data => {

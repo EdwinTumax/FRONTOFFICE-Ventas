@@ -10,15 +10,16 @@
       <th scope="col">DESCRIPCION</th>
       <th scope="col">DIRECCION</th>
       <th scope="col">CODIGO CLIENTE</th>
+      <th scope="col">OPCIONES</th>
     </tr>
   </thead>
-  <tbody *ngFor="let dirCliente of dirClientes; let i = index">
+  <tbody *ngFor="let dirCliente of dirCliente; let i = index">
     <tr>
       <th scope="row">{{ i + 1}}</th>
       <td>{{ dirCliente.codigoDireccion}}</td>
       <td>{{ dirCliente.descripcion}}</td>
       <th>{{ dirCliente.direccion}}</th>
-      <th>{{ dirCliente.codigoCliente}}</th>
+      <th>{{ dirCliente.cliente.codigoCliente}}</th>
       <td> 
         <button (click) = "eliminar(i)" class="btn btn-danger w120">Delete</button> 
         <button [routerLink]="['/dirCliente-update',dirCliente.codigoDireccion]" class="btn btn-success w120">Editar</button>
