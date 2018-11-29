@@ -28,7 +28,7 @@ export const ROUTES: Routes = [
     { path: 'compra-update/:id', component: AddUdpateCompraComponent},
     { path: 'detalle-compra', component: DetalleCompraComponent },
     { path: 'detalle-compra-add', component: AddUpdateDetalleCompraComponent },
-    { path: 'detalle-compra-update', component: AddUpdateDetalleCompraComponent},
+    { path: 'detalle-compra-update/:id', component: AddUpdateDetalleCompraComponent},
     { path: 'factura', component: FacturaComponent},
     { path: 'factura-add', component: AddUpdateFacturaComponent },
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
