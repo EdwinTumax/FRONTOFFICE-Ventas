@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark TypeLetter">
     <a class="navbar-brand" href="#">
-        <img class="rounded-circle" src="assets/logo4.jpg" width="90" height="90" alt="">
+        <img class="rounded-circle" src="assets/img/logo4.jpg" width="90" height="90" alt="">
     </a>
     <a class="navbar-brand" href="#">Inicio</a>
     <div class="collapse navbar-collapse TypeLetter" id="navbarSupportedContent">
@@ -30,8 +30,8 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input #texto class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button (click) = "buscar(texto.value)" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
         </form>
     </div>    
 </nav>

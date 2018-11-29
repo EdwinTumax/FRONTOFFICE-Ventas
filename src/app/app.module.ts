@@ -32,6 +32,7 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 
 
@@ -50,6 +51,7 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     AddUpdateUsuarioComponent,
     RolComponent,
     AddUpdateRolComponent,
+    BuscadorComponent,
   ],
   imports: [
     FormsModule,

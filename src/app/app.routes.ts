@@ -13,6 +13,7 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
 import { LoginComponent } from './components/login/login.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -29,6 +30,7 @@ export const ROUTES: Routes = [
     { path: 'rol-add', component: AddUpdateRolComponent },
     { path: 'rol-update/:id', component: AddUpdateRolComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'buscador/:termino', component: BuscadorComponent},
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
