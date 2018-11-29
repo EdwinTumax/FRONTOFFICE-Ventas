@@ -42,8 +42,6 @@ body {
 .fadeIn {
     animation-name: fadeIn;
 }
-<<<<<<< HEAD
-=======
 
 .TypeLetter {
     font-family: 'Times New Roman', Times, serif;
@@ -137,4 +135,3 @@ footer {
     text-align: center;
     height: 25px;
 }
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2

@@ -6,17 +6,14 @@ import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuar
 
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
-<<<<<<< HEAD
 import { CompraComponent } from './components/compra/compra.component';
 import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/add-udpate-compra.component';
 import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
 import { AddUpdateDetalleCompraComponent } from './components/detalle-compra/add-update-detalle-compra/add-update-detalle-compra.component';
-=======
 
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2
 import { LoginComponent } from './components/login/login.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
@@ -26,14 +23,12 @@ export const ROUTES: Routes = [
     { path: 'categoria', component: CategoriaComponent },
     { path: 'categoria-add', component: AddUpdateCategoriaComponent },
     { path: 'categoria-update/:id', component: AddUpdateCategoriaComponent },
-<<<<<<< HEAD
     { path: 'compra', component: CompraComponent },
     { path: 'compra-add', component: AddUdpateCompraComponent },
     { path: 'compra-update/:id', component: AddUdpateCompraComponent},
     { path: 'detalle-compra', component: DetalleCompraComponent },
     { path: 'detalle-compra-add', component: AddUpdateDetalleCompraComponent },
     { path: 'detalle-compra-update', component: AddUpdateDetalleCompraComponent},
-=======
     { path: 'factura', component: FacturaComponent},
     { path: 'factura-add', component: AddUpdateFacturaComponent },
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
@@ -43,7 +38,6 @@ export const ROUTES: Routes = [
     { path: 'rol', component: RolComponent },
     { path: 'rol-add', component: AddUpdateRolComponent },
     { path: 'rol-update/:id', component: AddUpdateRolComponent },
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2
     { path: 'login', component: LoginComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

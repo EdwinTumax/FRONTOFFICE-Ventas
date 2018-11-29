@@ -11,15 +11,10 @@ import { ROUTES } from './app.routes';
 
 // Servicios
 
-<<<<<<< HEAD
-import { CategoriaService } from './services/categoria.service';
-import { LoginService } from './services/login.service';
-=======
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
 import {UsuarioService} from './services/usuario.service';
 import {RolService} from './services/rol.service';
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2
 
 // Components
 import { AppComponent } from './app.component';
@@ -31,12 +26,10 @@ import { AddUpdateCategoriaComponent } from './components/categoria/add-update-c
 
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
-<<<<<<< HEAD
 import { CompraComponent } from './components/compra/compra.component';
 import { AddUdpateCompraComponent } from './components/compra/add-udpate-compra/add-udpate-compra.component';
 import { DetalleCompraComponent } from './components/detalle-compra/detalle-compra.component';
 import { AddUpdateDetalleCompraComponent } from './components/detalle-compra/add-update-detalle-compra/add-update-detalle-compra.component';
-=======
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
@@ -45,7 +38,6 @@ import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
 
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2
 
 @NgModule({
   declarations: [
@@ -56,19 +48,16 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     AddUpdateCategoriaComponent,
     LoginComponent,
     LoadingComponent,
-<<<<<<< HEAD
     CompraComponent,
     AddUdpateCompraComponent,
     DetalleCompraComponent,
-    AddUpdateDetalleCompraComponent
-=======
+    AddUpdateDetalleCompraComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
     UsuarioComponent,
     AddUpdateUsuarioComponent,
     RolComponent,
     AddUpdateRolComponent,
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2
   ],
   imports: [
     FormsModule,

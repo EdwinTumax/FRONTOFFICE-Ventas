@@ -16,22 +16,12 @@ export class LoginService {
     return new Promise((resolve) => {
       this._http.post(`${URL_AUT}`, creds, { headers: this.getHeaders() }).subscribe(data => {
         if (data) {
-<<<<<<< HEAD
           window.sessionStorage.setItem('access_token', data.json().access_token);
           window.sessionStorage.setItem('expires_in', data.json().expires_in);
           window.sessionStorage.setItem('refresh_token', data.json().refresh_token);
           window.sessionStorage.setItem('token_type', data.json().token_type);
           window.sessionStorage.setItem('scope', data.json().scope);
           resolve(true);
-=======
-         window.sessionStorage.setItem('access_token', data.json().access_token);
-         window.sessionStorage.setItem('expires_in', data.json().expires_in);
-         window.sessionStorage.setItem('refresh_token', data.json().refresh_token);
-         window.sessionStorage.setItem('token_type', data.json().token_type);
-         window.sessionStorage.setItem('scope', data.json().scope);
-         window.sessionStorage.setItem('usuario', JSON.stringify(user));
-         resolve(true);
->>>>>>> 8f5fe56f90b2e20daada62bde81007ac6818ffe2
         }
         resolve(false);
       },
