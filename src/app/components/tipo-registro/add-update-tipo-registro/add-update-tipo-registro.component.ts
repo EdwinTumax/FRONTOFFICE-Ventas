@@ -25,6 +25,7 @@ export class AddUpdateTipoRegistroComponent implements OnInit {
       }
     })
   }
+
   ngOnInit() {
   }
 
@@ -37,7 +38,7 @@ export class AddUpdateTipoRegistroComponent implements OnInit {
     } else {
       this._TipoRegistroService.updateTipoRegistro(this.tipoRegistro).subscribe(data => {
         console.log(data);
-        this._route.navigate(['tipo-regsitro']);
+        this._route.navigate(['/tipo-registro']);
       })
     }
   }
