@@ -20,7 +20,7 @@ export class TipoEmpaqueComponent implements OnInit {
   }
   eliminar(index: number) {
     const registro = this.tipo_empaque[index];
-    this._tipoEmpaqueService.deleteTipoEmpaque(registro.codigo_tipo_empaque).subscribe((data) => {
+    this._tipoEmpaqueService.deleteTipoEmpaque(registro.codigoTipoEmpaque).subscribe((data) => {
         this.tipo_empaque.splice(index, index + 1);
     });
   }

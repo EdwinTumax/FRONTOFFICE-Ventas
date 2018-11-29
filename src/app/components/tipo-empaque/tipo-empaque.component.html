@@ -18,7 +18,7 @@
       <td>{{ tipoEmpaque.descripcion }}</td>
       <td> 
         <button (click) = "eliminar(i)" class="btn btn-danger w120">Delete</button> 
-        <button [routerLink]="[]" class="btn btn-success w120">Editar</button>
+        <button [routerLink]="['/tipo-empaque-update', tipoEmpaque.codigoTipoEmpaque]" class="btn btn-success w120">Editar</button>
       </td>      
     </tr>
   </tbody>

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { URL_API } from 'src/environments/environment';
+import { URL_API } from './../../environments/environment';
 import { TipoRegistro } from '../components/interfaces/tipo-registro.interface';
 
 @Injectable({
@@ -10,16 +10,26 @@ import { TipoRegistro } from '../components/interfaces/tipo-registro.interface';
 export class TipoRegistroService {
     constructor(private _httpClient: HttpClient){ }
 
-    getTipoRegistro(){
+    getTipoRegistros(){
         return this._httpClient.get(`${URL_API}tipo-registro`, {headers: this.getHeaders()});
     }
 
-    getTipoRegistros(id: number){
+    getTipoRegistro(id: number){
         return this._httpClient.get(`${URL_API}tipo-registro/${id}`, {headers: this.getHeaders()});
     }
 
     addTipoRegistro(TipoRegistro: TipoRegistro){
         const body = JSON.stringify(TipoRegistro);
+        return this._httpClient.post(`${URL_API}tipo-registro`, body, {headers : this.getHeaders()});
+    }
+
+    updateTipoRegistro(TipoRegistro: TipoRegistro){
+        const body =JSON.stringify(TipoRegistro);
+        return this._httpClient.put(`${URL_API}tipo-registro/${TipoRegistro.codigoTipoRegistro}`, body, {headers: this.getHeaders()});
+    }
+
+    deleteTipoRegistro(id: number){
+        return this._httpClient.delete(`${URL_API}tipo-registro/${id}`, {headers: this.getHeaders()});
     }
 
     getHeaders() {

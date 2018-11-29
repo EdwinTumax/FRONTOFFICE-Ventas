@@ -25,6 +25,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
 import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
 import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
 import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
+import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-update-tipo-registro/add-update-tipo-registro.component';
 
 
 
@@ -40,7 +41,8 @@ import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.
     TipoEmpaqueComponent,
     AddUpdateCategoriaComponent,
     AddUpdateTipoEmpaqueComponent,
-    TipoRegistroComponent
+    TipoRegistroComponent,
+    AddUpdateTipoRegistroComponent
   ],
   imports: [
     FormsModule,
