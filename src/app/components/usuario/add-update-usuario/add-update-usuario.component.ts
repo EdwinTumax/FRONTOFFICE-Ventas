@@ -30,6 +30,8 @@ export class AddUpdateUsuarioComponent implements OnInit {
     this._activatedRoute.params.subscribe(params => {
       if ( params['id'] > 0) {
         this._usuarioService.getUsuario(params['id']).subscribe((data: any) => {
+          console.log('soy data');
+          console.log(data);
           this.usuario = data;
         });
       } else {
@@ -62,10 +64,9 @@ export class AddUpdateUsuarioComponent implements OnInit {
         this._router.navigate(['/usuario']);
       });
     } else {
-      console.log('entre a actualizar');
+      console.log('update');
       console.log(this.usuario);
       this._usuarioService.updateUsuario(this.usuario).subscribe(data => {
-        console.log(data);
         this._router.navigate(['/usuario']);
       });
     }
