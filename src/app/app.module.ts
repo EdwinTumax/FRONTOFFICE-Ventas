@@ -40,6 +40,14 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
+import { ProveedorComponent } from './components/proveedor/proveedor.component';
+import { AddUpdateProveedorComponent } from './components/proveedor/add-update-proveedor/add-update-proveedor.component';
+import { DirprovComponent } from './components/dirprov/dirprov.component';
+import { AddUpdateDirprovComponent } from './components/dirprov/add-update-dirprov/add-update-dirprov.component';
+import { TelprovComponent } from './components/telprov/telprov.component';
+import { AddUpdateTelprovComponent } from './components/telprov/add-update-telprov/add-update-telprov.component';
+import { EmailprovComponent } from './components/emailprov/emailprov.component';
+import { AddUpdateEmailprovComponent } from './components/emailprov/add-update-emailprov/add-update-emailprov.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +71,14 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     AddUpdateUsuarioComponent,
     RolComponent,
     AddUpdateRolComponent,
+    ProveedorComponent,
+    AddUpdateProveedorComponent,
+    DirprovComponent,
+    AddUpdateDirprovComponent,
+    TelprovComponent,
+    AddUpdateTelprovComponent,
+    EmailprovComponent,
+    AddUpdateEmailprovComponent,
   ],
   imports: [
     FormsModule,
