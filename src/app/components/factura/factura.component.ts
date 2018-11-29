@@ -13,7 +13,6 @@ export class FacturaComponent implements OnInit {
   constructor(private _facturaService: FacturaService) {
     this.loading = true;
     this._facturaService.getFacturas().subscribe((data: any) => {
-      console.log(data);
       this.facturas = data;
       this.loading = false;
     });

@@ -15,6 +15,7 @@ export class AddUpdateFacturaComponent implements OnInit {
     serie: '',
     fechaFactura: new Date(),
     total: 0,
+    detalleFactura: []
   };
   nuevo = false;
 

@@ -18,6 +18,9 @@ import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.com
 import { LoginComponent } from './components/login/login.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
+import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
+
+
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -26,6 +29,7 @@ export const ROUTES: Routes = [
     { path: 'categoria-update/:id', component: AddUpdateCategoriaComponent },
     { path: 'factura', component: FacturaComponent},
     { path: 'factura-add', component: AddUpdateFacturaComponent },
+    { path: 'detalle-factura/:id', component: DetalleFacturaComponent},
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
     { path: 'usuario', component: UsuarioComponent },
     { path: 'usuario-add', component: AddUpdateUsuarioComponent },

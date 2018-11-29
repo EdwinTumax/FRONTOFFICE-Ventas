@@ -41,6 +41,7 @@ import { AddUpdateProductoComponent } from './components/producto/add-update-pro
 import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
 import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
 import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
+import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.
     TipoEmpaqueComponent,
     AddUpdateCategoriaComponent,
     AddUpdateTipoEmpaqueComponent,
-    TipoRegistroComponent
+    TipoRegistroComponent,
+    DetalleFacturaComponent
   ],
   imports: [
     FormsModule,
