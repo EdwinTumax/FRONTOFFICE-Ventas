@@ -5,6 +5,8 @@ import { AddUpdateCategoriaComponent } from './components/categoria/add-update-c
 import { LoginComponent } from './components/login/login.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
+
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -14,6 +16,7 @@ export const ROUTES: Routes = [
     { path: 'factura', component: FacturaComponent},
     { path: 'factura-add', component: AddUpdateFacturaComponent },
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
+    { path: 'detalle-factura/:id' , component: DetalleFacturaComponent},
     { path: 'login', component: LoginComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];

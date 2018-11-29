@@ -24,6 +24,7 @@ import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { AddUpdateFacturaComponent } from './components/factura/add-update-factu
     LoadingComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
+    DetalleFacturaComponent,
   ],
   imports: [
     FormsModule,
