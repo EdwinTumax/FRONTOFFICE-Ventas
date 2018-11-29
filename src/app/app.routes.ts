@@ -11,12 +11,17 @@ import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
 import { LoginComponent } from './components/login/login.component';
+import { FacturaComponent } from './components/factura/factura.component';
+import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'categoria', component: CategoriaComponent },
     { path: 'categoria-add', component: AddUpdateCategoriaComponent },
     { path: 'categoria-update/:id', component: AddUpdateCategoriaComponent },
+    { path: 'factura', component: FacturaComponent},
+    { path: 'factura-add', component: AddUpdateFacturaComponent },
+    { path: 'factura-update/:id', component: AddUpdateFacturaComponent },
     { path: 'usuario', component: UsuarioComponent },
     { path: 'usuario-add', component: AddUpdateUsuarioComponent },
     { path: 'usuario-update/:id', component: AddUpdateUsuarioComponent },
@@ -27,4 +32,4 @@ export const ROUTES: Routes = [
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(ROUTES);
+export const APP_ROUTING = RouterModule.forRoot(ROUTES, {useHash: true});

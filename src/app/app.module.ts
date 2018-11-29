@@ -26,12 +26,13 @@ import { AddUpdateCategoriaComponent } from './components/categoria/add-update-c
 
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
-
+import { FacturaComponent } from './components/factura/factura.component';
+import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
-
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
+
 
 
 @NgModule({
@@ -43,11 +44,12 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     AddUpdateCategoriaComponent,
     LoginComponent,
     LoadingComponent,
+    FacturaComponent,
+    AddUpdateFacturaComponent,
     UsuarioComponent,
     AddUpdateUsuarioComponent,
     RolComponent,
     AddUpdateRolComponent,
-
   ],
   imports: [
     FormsModule,

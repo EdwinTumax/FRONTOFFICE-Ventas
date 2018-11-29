@@ -21,6 +21,7 @@ export class LoginService {
          window.sessionStorage.setItem('refresh_token', data.json().refresh_token);
          window.sessionStorage.setItem('token_type', data.json().token_type);
          window.sessionStorage.setItem('scope', data.json().scope);
+         window.sessionStorage.setItem('usuario', JSON.stringify(user));
          resolve(true);
         }
         resolve(false);
@@ -37,6 +38,7 @@ export class LoginService {
     window.sessionStorage.removeItem('refresh_token');
     window.sessionStorage.removeItem('token_type');
     window.sessionStorage.removeItem('scope');
+    window.sessionStorage.removeItem('usuario');
   }
 
   getHeaders() {
