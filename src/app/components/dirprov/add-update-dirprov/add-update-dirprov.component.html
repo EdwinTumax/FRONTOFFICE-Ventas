@@ -12,7 +12,7 @@
                 <div class="form-group">
                     <label for="cmbProveedor">Proveedor:</label>
                     <select [(ngModel)]="direccionProveedor.proveedor.contactoPrincipal" name="cmbProveedor" class="form-control" id="cmbProveedor" required>
-                        <option [value] = "proveedor.contactoPrincipal" *ngFor = "let proveedor of proveedores">{{ proveedor.codigoProveedor }}</option>
+                        <option [value] = "proveedor.contactoPrincipal" *ngFor = "let proveedor of proveedores">{{ proveedor.contactoPrincipal }}</option>
                     </select>
                 </div>
             </div>

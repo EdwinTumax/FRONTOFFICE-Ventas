@@ -37,11 +37,13 @@ export class AddUpdateProveedorComponent implements OnInit {
       this._proveedorService.addProveedor(this.proveedor).subscribe(data => {
         console.log(data);
         this._router.navigate(['/proveedor']);
+        console.log(this.nuevo);
       });
     } else {
       this._proveedorService.updateProveedor(this.proveedor).subscribe(data => {
         console.log(data);
         this._router.navigate(['/proveedor']);
+        console.log(this.nuevo);
       });
     }
   }
