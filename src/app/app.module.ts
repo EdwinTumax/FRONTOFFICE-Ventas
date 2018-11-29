@@ -20,8 +20,10 @@ import {RolService} from './services/rol.service';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
+
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { FacturaComponent } from './components/factura/factura.component';
@@ -30,6 +32,7 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
+
 
 
 @NgModule({
