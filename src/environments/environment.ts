@@ -7,9 +7,10 @@ export const environment = {
 };
 
 // export const URL_API = 'http://localhost:9300/api/v1/';
-export const URL_API = 'https://backoffice-ventas.herokuapp.com/api/v1/';
-// export const URL_AUT = 'http://localhost:9300/oauth/token';
-export const URL_AUT = 'https://backoffice-ventas.herokuapp.com/oauth/token';
+// export const URL_API = 'https://backoffice-ventas.herokuapp.com/api/v1/';
+export const URL_API = 'http://192.168.136.254:9300/api/v1/';
+export const URL_AUT = 'http://192.168.136.254:9300/oauth/token';
+// export const URL_AUT = 'https://backoffice-ventas.herokuapp.com/oauth/token';
 
 /*
  * For easier debugging in development mode, you can import the following file

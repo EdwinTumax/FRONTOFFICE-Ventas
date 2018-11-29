@@ -2,6 +2,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
+import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
+import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
@@ -11,6 +13,8 @@ export const ROUTES: Routes = [
     { path: 'categoria', component: CategoriaComponent },
     { path: 'categoria-add', component: AddUpdateCategoriaComponent },
     { path: 'categoria-update/:id', component: AddUpdateCategoriaComponent },
+    { path: 'tipo-empaque', component: TipoEmpaqueComponent},
+    { path: 'tipo-empaque-add', component: AddUpdateTipoEmpaqueComponent},
     { path: 'login', component: LoginComponent },
     { path: 'producto', component: ProductoComponent },
     { path: 'producto-add', component: AddUpdateProductoComponent},

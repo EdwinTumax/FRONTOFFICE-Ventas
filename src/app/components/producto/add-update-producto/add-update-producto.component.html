@@ -14,10 +14,13 @@
             </select>
           </div>
         <p></p>
-        <label for="cmbCodigoTipoEmpaquetado">Código de Empaquetado</label>
-        <select id="cmbCodigoTipoEmpaquetado" ></select>
+        <div class="form-group">
+            <label for="cmbTipoEmpaque">Tipo de Empaque:</label> 
+            <select [(ngModel)] = "producto.tipoEmpaque.codigoTipoEmpaque" name="cmbTipoEmpaque" class="form-control" id="cmbTipoEmpaque" required >
+                <option [value] = "tipoEmpaque.codigoTipoEmpaque" *ngFor = "let tipoEmpaque of tipo_empaques">{{ tipoEmpaque.codigoTipoEmpaque }}</option>
+            </select>
+          </div>
           <p>Imagen</p>
-          <!-- <input type="file" [(ngModel)]="producto.imagen" > -->
           <div class="custom-file">
               <input type="file" class="custom-file-input" id="customFileLang" lang="es" [(ngModel)]="producto.imagen" name="label">
               <label class="custom-file-label" for="label" [(ngModel)]="producto.imagen">{{producto.imagen}}</label>

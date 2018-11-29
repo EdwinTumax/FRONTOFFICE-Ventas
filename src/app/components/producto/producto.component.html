@@ -19,7 +19,7 @@
       <th scope="row">{{ i + 1}}</th>
       <td>{{ producto.codigoProducto}}</td>
       <td>{{ producto.descripcion}}</td>
-      <td><!--{{ producto.codigoTipoEmpaque}}--> S</td>
+      <td>{{ producto.tipoEmpaque.descripcion}}</td>
       <td>{{ producto.categoria.descripcion}}</td>
       <td><img src="assets/img/{{producto.imagen}}" height="100" width="100"></td> 
       <!-- <td>{{ producto.imagen }}</td> -->

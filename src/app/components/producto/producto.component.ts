@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Producto} from './../interfaces/producto.interface';
 import {ProductoService} from './../../services/producto.service';
 import { CategoriaComponent } from '../categoria/categoria.component';
+import { TipoEmpaqueComponent } from '../tipo-empaque/tipo-empaque.component';
 @Component({
   selector: 'app-producto',
   templateUrl: './producto.component.html',
