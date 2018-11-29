@@ -11,12 +11,12 @@ import { TipoEmpaqueService } from './../../../services/tipo_empaques.service';
 export class AddUpdateTipoEmpaqueComponent implements OnInit {
   tipoEmpaque: TipoEmpaque = {
     codigoTipoEmpaque: 0,
-    descripcion : ''
+    descripcion: ''
   };
   nuevo = false;
-  constructor(private _activatedRoute: ActivatedRoute, private _TipoEmpaqueService: TipoEmpaqueService, private _route : Router) { 
+  constructor(private _activatedRoute: ActivatedRoute, private _TipoEmpaqueService: TipoEmpaqueService, private _route: Router) {
     this._activatedRoute.params.subscribe(params => {
-      if ( params['id'] > 0) {
+      if (params['id'] > 0) {
         this._TipoEmpaqueService.getTipoEmpaque(params['id']).subscribe((data: any) => {
           this.tipoEmpaque = data;
         });
@@ -29,8 +29,8 @@ export class AddUpdateTipoEmpaqueComponent implements OnInit {
   ngOnInit() {
   }
 
-  guardar(){
-    if (this.nuevo){
+  guardar() {
+    if (this.nuevo) {
       this._TipoEmpaqueService.addTipoEmpaque(this.tipoEmpaque).subscribe(data => {
         console.log(data);
         this._route.navigate(['/tipo-empaque']);
@@ -39,7 +39,7 @@ export class AddUpdateTipoEmpaqueComponent implements OnInit {
       this._TipoEmpaqueService.updateTipoEmpaque(this.tipoEmpaque).subscribe(data => {
         console.log(data);
         this._route.navigate(['/tipo-empaque']);
-      })
+      });
     }
   }
 }
