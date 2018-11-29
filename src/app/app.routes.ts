@@ -17,6 +17,8 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
 import { LoginComponent } from './components/login/login.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
@@ -39,6 +41,9 @@ export const ROUTES: Routes = [
     { path: 'rol-add', component: AddUpdateRolComponent },
     { path: 'rol-update/:id', component: AddUpdateRolComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'producto', component: ProductoComponent },
+    { path: 'producto-add', component: AddUpdateProductoComponent},
+    { path: 'producto-update/:id', component: AddUpdateProductoComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

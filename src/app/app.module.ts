@@ -12,6 +12,7 @@ import { ROUTES } from './app.routes';
 // Servicios
 
 import {CategoriaService} from './services/categoria.service';
+import {ProductoService} from './services/producto.service';
 import {LoginService} from './services/login.service';
 import {TipoEmpaqueService} from './services/tipo_empaques.service';
 import {UsuarioService} from './services/usuario.service';
@@ -27,6 +28,8 @@ import { AddUpdateCategoriaComponent } from './components/categoria/add-update-c
 
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
 import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
 import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
 import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
@@ -38,8 +41,6 @@ import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuar
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +50,8 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     AddUpdateCategoriaComponent,
     LoginComponent,
     LoadingComponent,
+    ProductoComponent,
+    AddUpdateProductoComponent,
     TipoEmpaqueComponent,
     AddUpdateCategoriaComponent,
     AddUpdateTipoEmpaqueComponent,

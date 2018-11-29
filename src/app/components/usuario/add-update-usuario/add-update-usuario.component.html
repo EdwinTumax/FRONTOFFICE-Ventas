@@ -1,8 +1,8 @@
 <head>Usuario</head>
-<button [routerLink]="['/usuario']" class="btn btn-outline-primary">Regresar</button>
+<button [routerLink]="['/usuario']" class="btn btn-outline-secondary zoom">Regresar</button>
 <hr>
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 color1">
         <form (ngSubmit) = "guardar()" #forma = "ngForm">
           <div class="form-group">
             <label for="txtNombre">Nombre</label>
@@ -28,7 +28,7 @@
               </select>
           </div>  
           <div class="form-group">
-            <button [disabled]= "!forma.valid" type="submit" class="btn btn-outline-primary">Guardar</button>
+            <button [disabled]= "!forma.valid" type="submit" class="btn btn-outline-warning zoom">Guardar</button>
           </div>
     </form>
   </div>

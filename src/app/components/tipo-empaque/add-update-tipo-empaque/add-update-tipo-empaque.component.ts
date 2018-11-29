@@ -16,14 +16,14 @@ export class AddUpdateTipoEmpaqueComponent implements OnInit {
   nuevo = false;
   constructor(private _activatedRoute: ActivatedRoute, private _TipoEmpaqueService: TipoEmpaqueService, private _route : Router) { 
     this._activatedRoute.params.subscribe(params => {
-      if (params['id'] > 0){
-        this._TipoEmpaqueService.getTipoEmpaque(params['id']).subscribe((data: any) =>{
+      if ( params['id'] > 0) {
+        this._TipoEmpaqueService.getTipoEmpaque(params['id']).subscribe((data: any) => {
           this.tipoEmpaque = data;
         });
       } else {
         this.nuevo = true;
       }
-    })
+    });
   }
 
   ngOnInit() {
