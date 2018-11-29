@@ -4,7 +4,7 @@
 <div class="row color1">
     <div class="col-md-12">
         <form (ngSubmit)="guardar()" #forma="ngForm">
-            <div class="form-group">
+            <div class="form-group has-danger">
                 <label for="txtDescripcion">Descripción</label>
                 <input placeholder="Descripción" name="txtDescripcion" [(ngModel)]="categoria.descripcion" required class="form-control" id="txtDescripcion" type="text">
             </div>
