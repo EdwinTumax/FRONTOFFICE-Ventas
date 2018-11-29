@@ -6,6 +6,10 @@ import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuar
 
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
+import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
+import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
+import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
+import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-update-tipo-registro/add-update-tipo-registro.component';
 
 import { RolComponent } from './components/rol/rol.component';
 import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
@@ -19,6 +23,12 @@ export const ROUTES: Routes = [
     { path: 'categoria', component: CategoriaComponent },
     { path: 'categoria-add', component: AddUpdateCategoriaComponent },
     { path: 'categoria-update/:id', component: AddUpdateCategoriaComponent },
+    { path: 'tipo-empaque-update/:id', component: AddUpdateTipoEmpaqueComponent},
+    { path: 'tipo-empaque', component: TipoEmpaqueComponent},
+    { path: 'tipo-empaque-add', component: AddUpdateTipoEmpaqueComponent},
+    { path: 'tipo-registro', component: TipoRegistroComponent},
+    { path: 'tipo-registro-add', component: AddUpdateTipoRegistroComponent},
+    { path: 'tipo-registro-update/:id', component: AddUpdateTipoRegistroComponent},
     { path: 'factura', component: FacturaComponent},
     { path: 'factura-add', component: AddUpdateFacturaComponent },
     { path: 'factura-update/:id', component: AddUpdateFacturaComponent },

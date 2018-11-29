@@ -13,6 +13,7 @@ import { ROUTES } from './app.routes';
 
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
+import {TipoEmpaqueService} from './services/tipo_empaques.service';
 import {UsuarioService} from './services/usuario.service';
 import {RolService} from './services/rol.service';
 
@@ -26,6 +27,10 @@ import { AddUpdateCategoriaComponent } from './components/categoria/add-update-c
 
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
+import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
+import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
+import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-update-tipo-registro/add-update-tipo-registro.component';
 import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
@@ -44,6 +49,11 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     AddUpdateCategoriaComponent,
     LoginComponent,
     LoadingComponent,
+    TipoEmpaqueComponent,
+    AddUpdateCategoriaComponent,
+    AddUpdateTipoEmpaqueComponent,
+    TipoRegistroComponent,
+    AddUpdateTipoRegistroComponent,
     FacturaComponent,
     AddUpdateFacturaComponent,
     UsuarioComponent,
@@ -58,7 +68,7 @@ import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-updat
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService, UsuarioService, RolService],
+  providers: [CategoriaService, LoginService, UsuarioService, RolService, TipoEmpaqueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
