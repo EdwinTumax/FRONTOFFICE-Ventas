@@ -20,6 +20,8 @@ import { Usuario } from '../components/interfaces/usuario.interface';
     }
     updateUsuario(usuario: Usuario) {
         const body = JSON.stringify(usuario);
+        console.log('body');
+        console.log(body);
         return this._httpClient.put(`${URL_API}usuario/${usuario.codigoUsuario}`, body, {headers: this.getHeaders()});
     }
     deleteUsuario(id: number) {

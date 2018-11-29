@@ -19,7 +19,7 @@
                 <td>{{ categoria.codigoCategoria}}</td>
                 <td>{{ categoria.descripcion}}</td>
                 <td>
-                    <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
+                    <button (click)="eliminar(i)" class="btn btn-danger w120">Eliminar</button>
                     <button [routerLink]="['/categoria-update',categoria.codigoCategoria]" class="btn btn-success w120">Editar</button>
                 </td>
             </tr>
