@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
   public login() {
      this._loginService.login(this.user).then(result => {
        if (result === true) {
+        window.location.reload();
         this._router.navigateByUrl('/home');
        } else {
          this._router.navigateByUrl('/login');
