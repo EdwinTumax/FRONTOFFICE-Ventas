@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from '../../interfaces/usuario.interface';
+import { Usuario} from '../../interfaces/usuario.interface';
+import { Rol } from '../../interfaces/rol.interface';
 import { NgForm } from '@angular/forms';
 import { UsuarioService } from './../../../services/usuario.service';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -13,12 +14,13 @@ import { RolService } from 'src/app/services/rol.service';
 
 export class AddUpdateUsuarioComponent implements OnInit {
   roles: any[] = [];
-    usuario: Usuario = {
+  usuario: Usuario = {
     codigoUsuario: 0,
     email: '',
     nombre: '',
+    username: '',
     password: '',
-    codigoRol: 0
+    rol: { codigoRol: 0, descripcion: '', nombre: ''}
   };
   nuevo = false;
   constructor(private _activatedRoute: ActivatedRoute,
@@ -46,9 +48,14 @@ export class AddUpdateUsuarioComponent implements OnInit {
     });
   }
 
+  async rolChange(event: any): Promise<void> {
+    console.log(event);
+  }
+
   guardar() {
     if ( this.nuevo ) {
-      this._usuarioService.addUsuario(this.usuario).subscribe(data => {
+      console.log(this.usuario);
+       this._usuarioService.addUsuario(this.usuario).subscribe(data => {
         console.log(data);
         this._router.navigate(['/usuario']);
       });

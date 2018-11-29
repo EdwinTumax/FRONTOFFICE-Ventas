@@ -32,4 +32,4 @@ export const ROUTES: Routes = [
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
-export const APP_ROUTING = RouterModule.forRoot(ROUTES);
+export const APP_ROUTING = RouterModule.forRoot(ROUTES, {useHash: true});
