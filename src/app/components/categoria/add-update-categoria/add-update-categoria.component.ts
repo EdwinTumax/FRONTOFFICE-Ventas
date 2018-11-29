@@ -14,6 +14,7 @@ export class AddUpdateCategoriaComponent implements OnInit {
     descripcion: ''
   };
   nuevo = false;
+
   constructor(private _activatedRoute: ActivatedRoute, private _categoriaService: CategoriaService, private _router: Router) {
     this._activatedRoute.params.subscribe(params => {
       if (params['id'] > 0) {
@@ -43,3 +44,4 @@ export class AddUpdateCategoriaComponent implements OnInit {
     }
   }
 }
+

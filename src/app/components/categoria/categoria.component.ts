@@ -6,6 +6,7 @@ import { CategoriaService } from './../../services/categoria.service';
   templateUrl: './categoria.component.html',
   styles: []
 })
+
 export class CategoriaComponent implements OnInit {
   categorias: any[] = [];
   loading = false;
@@ -18,10 +19,11 @@ export class CategoriaComponent implements OnInit {
   }
   eliminar(index: number) {
     const registro = this.categorias[index];
-    this._categoriaService.deleteCategoria(registro.codigoCategoria).subscribe((data) => {
+      this._categoriaService.deleteCategoria(registro.codigoCategoria).subscribe((data) => {
       this.categorias.splice(index, index + 1);
     });
   }
+
   ngOnInit() {
   }
 
