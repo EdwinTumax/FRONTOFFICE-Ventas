@@ -9,7 +9,7 @@
                 <th scope="col">CODIGO</th>
                 <th scope="col">DESCRIPCION</th>
                 <th scope="col">DIRECCION</th>
-                <th scope="col">CODIGO PROVEEDOR</th>
+                <th scope="col">PROVEEDOR</th>
                 <th scope="col">OPCIONES</th>
             </tr>
         </thead>
@@ -19,7 +19,7 @@
                 <td>{{ direccionProveedor.codigoDireccion}}</td>
                 <td>{{ direccionProveedor.descripcion}}</td>
                 <td>{{ direccionProveedor.direccion}}</td>
-                <td>{{ direccionProveedor.proveedor.codigoProveedor}}</td>
+                <td>{{ direccionProveedor.proveedor.contactoPrincipal}}</td>
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/dirprov-update',direccionProveedor.codigoDireccion]" class="btn btn-success w120">Editar</button>

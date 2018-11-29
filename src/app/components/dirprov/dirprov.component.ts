@@ -21,7 +21,7 @@ export class DirprovComponent implements OnInit {
   }
   eliminar(index: number) {
     const registro = this.direccionProveedores[index];
-    this._direccionProveedorService.deleteDireccionProveedor(registro.codigoDireccionProveedor).subscribe((data) => {
+    this._direccionProveedorService.deleteDireccionProveedor(registro.codigoDireccion).subscribe((data) => {
         this.direccionProveedores.splice(index, index + 1);
     });
   }

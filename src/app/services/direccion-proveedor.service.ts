@@ -28,7 +28,7 @@ export class DireccionProveedorService {
   }
 
   deleteDireccionProveedor(id: number) {
-    return this._httpClient.delete(`${URL_API}direccionProveedor/${id}`, {headers: this.getHeaders()});
+    return this._httpClient.delete(`${URL_API}direccion-proveedor/${id}`, {headers: this.getHeaders()});
   }
 
   getHeaders() {

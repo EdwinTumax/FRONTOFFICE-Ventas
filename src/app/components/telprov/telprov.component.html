@@ -9,7 +9,7 @@
                 <th scope="col">CODIGO</th>
                 <th scope="col">DESCRIPCION</th>
                 <th scope="col">TELEFONO</th>
-                <th scope="col">CODIGO PROVEEDOR</th>
+                <th scope="col">PROVEEDOR</th>
                 <th scope="col">OPCIONES</th>
             </tr>
         </thead>
@@ -19,7 +19,7 @@
                 <td>{{ telefonoProveedor.codigoDireccion}}</td>
                 <td>{{ telefonoProveedor.descripcion}}</td>
                 <td>{{ telefonoProveedor.numeroTelefono}}</td>
-                <td>{{ telefonoProveedor.proveedor.codigoProveedor}}</td>
+                <td>{{ telefonoProveedor.proveedor.contactoPrincipal}}</td>
                 <td>
                     <button (click)="eliminar(i)" class="btn btn-danger w120">Delete</button>
                     <button [routerLink]="['/telprov-update',telefonoProveedor.codigoTelefono]" class="btn btn-success w120">Editar</button>

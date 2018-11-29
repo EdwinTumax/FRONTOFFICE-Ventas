@@ -10,9 +10,9 @@
                 <label for="txtDescripcion">Descripcion</label>
                 <input placeholder="Descripcion" name="txtDescripcion" [(ngModel)]="emailProveedor.descripcion" required class="form-control" id="txtDescripcion" type="text">
                 <div class="form-group">
-                    <label for="cmbProveedor">Codigo Proveedor:</label>
-                    <select [(ngModel)]="emailProveedor.proveedor.codigoProveedor" name="cmbProveedor" class="form-control" id="cmbProveedor" required>
-                        <option [value] = "proveedor.codigoProveedor" *ngFor = "let proveedor of proveedores">{{ proveedor.codigoProveedor }}</option>
+                    <label for="cmbProveedor">Proveedor:</label>
+                    <select [(ngModel)]="emailProveedor.proveedor.contactoPrincipal" name="cmbProveedor" class="form-control" id="cmbProveedor" required>
+                        <option [value] = "proveedor.contactoPrincipal" *ngFor = "let proveedor of proveedores">{{ proveedor.contactoPrincipal }}</option>
                     </select>
                 </div>
             </div>
