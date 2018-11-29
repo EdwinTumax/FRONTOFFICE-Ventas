@@ -14,18 +14,29 @@ import { ROUTES } from './app.routes';
 import {CategoriaService} from './services/categoria.service';
 import {LoginService} from './services/login.service';
 import {TipoEmpaqueService} from './services/tipo_empaques.service';
+import {UsuarioService} from './services/usuario.service';
+import {RolService} from './services/rol.service';
+
 // Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
+
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { AddUpdateCategoriaComponent } from './components/categoria/add-update-categoria/add-update-categoria.component';
+
 import { LoginComponent } from './components/login/login.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
 import { TipoEmpaqueComponent } from './components/tipo-empaque/tipo-empaque.component';
 import { AddUpdateTipoEmpaqueComponent } from './components/tipo-empaque/add-update-tipo-empaque/add-update-tipo-empaque.component';
 import { TipoRegistroComponent } from './components/tipo-registro/tipo-registro.component';
 import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-update-tipo-registro/add-update-tipo-registro.component';
+import { FacturaComponent } from './components/factura/factura.component';
+import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { AddUpdateUsuarioComponent } from './components/usuario/add-update-usuario/add-update-usuario.component';
+import { RolComponent } from './components/rol/rol.component';
+import { AddUpdateRolComponent } from './components/rol/add-update-rol/add-update-rol.component';
 
 
 
@@ -42,7 +53,13 @@ import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-u
     AddUpdateCategoriaComponent,
     AddUpdateTipoEmpaqueComponent,
     TipoRegistroComponent,
-    AddUpdateTipoRegistroComponent
+    AddUpdateTipoRegistroComponent,
+    FacturaComponent,
+    AddUpdateFacturaComponent,
+    UsuarioComponent,
+    AddUpdateUsuarioComponent,
+    RolComponent,
+    AddUpdateRolComponent,
   ],
   imports: [
     FormsModule,
@@ -51,7 +68,7 @@ import { AddUpdateTipoRegistroComponent } from './components/tipo-registro/add-u
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true})
   ],
-  providers: [CategoriaService, LoginService, TipoEmpaqueService],
+  providers: [CategoriaService, LoginService, UsuarioService, RolService, TipoEmpaqueService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
