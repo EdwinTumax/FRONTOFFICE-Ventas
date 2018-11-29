@@ -118,7 +118,8 @@ import { AddUpdateEmailClienteComponent} from './components/emailCliente/add-upd
     HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: [CategoriaService, LoginService, UsuarioService, RolService, TipoEmpaqueService, ClienteService, DirClienteService, EmailClienteService, TelClienteService],
+  providers: [CategoriaService, LoginService, UsuarioService, RolService,
+    TipoEmpaqueService, ClienteService, DirClienteService, EmailClienteService, TelClienteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

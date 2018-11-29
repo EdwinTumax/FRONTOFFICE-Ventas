@@ -39,7 +39,6 @@ import { FacturaComponent } from './components/factura/factura.component';
 import { AddUpdateFacturaComponent } from './components/factura/add-update-factura/add-update-factura.component';
 import { ProductoComponent } from './components/producto/producto.component';
 import { AddUpdateProductoComponent } from './components/producto/add-update-producto/add-update-producto.component';
-
 import { DetalleFacturaComponent } from './components/detalle-factura/detalle-factura.component';
 
 
